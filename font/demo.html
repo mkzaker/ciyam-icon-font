@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html>
+  <head><!--[if lt IE 9]><script language="javascript" type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <meta charset="UTF-8"><style>/*
+ * Bootstrap v2.2.1
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+a:hover,
+a:active {
+  outline: 0;
+}
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: middle;
+}
+button,
+input {
+  *overflow: visible;
+  line-height: normal;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+  background-color: #fff;
+}
+a {
+  color: #08c;
+  text-decoration: none;
+}
+a:hover {
+  color: #005580;
+  text-decoration: underline;
+}
+.row {
+  margin-left: -20px;
+  *zoom: 1;
+}
+.row:before,
+.row:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.row:after {
+  clear: both;
+}
+[class*="span"] {
+  float: left;
+  min-height: 1px;
+  margin-left: 20px;
+}
+.container,
+.navbar-static-top .container,
+.navbar-fixed-top .container,
+.navbar-fixed-bottom .container {
+  width: 940px;
+}
+.span12 {
+  width: 940px;
+}
+.span11 {
+  width: 860px;
+}
+.span10 {
+  width: 780px;
+}
+.span9 {
+  width: 700px;
+}
+.span8 {
+  width: 620px;
+}
+.span7 {
+  width: 540px;
+}
+.span6 {
+  width: 460px;
+}
+.span5 {
+  width: 380px;
+}
+.span4 {
+  width: 300px;
+}
+.span3 {
+  width: 220px;
+}
+.span2 {
+  width: 140px;
+}
+.span1 {
+  width: 60px;
+}
+[class*="span"].pull-right,
+.row-fluid [class*="span"].pull-right {
+  float: right;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  *zoom: 1;
+}
+.container:before,
+.container:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.container:after {
+  clear: both;
+}
+p {
+  margin: 0 0 10px;
+}
+.lead {
+  margin-bottom: 20px;
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 30px;
+}
+small {
+  font-size: 85%;
+}
+h1 {
+  margin: 10px 0;
+  font-family: inherit;
+  font-weight: bold;
+  line-height: 20px;
+  color: inherit;
+  text-rendering: optimizelegibility;
+}
+h1 small {
+  font-weight: normal;
+  line-height: 1;
+  color: #999;
+}
+h1 {
+  line-height: 40px;
+}
+h1 {
+  font-size: 38.5px;
+}
+h1 small {
+  font-size: 24.5px;
+}
+body {
+  margin-top: 90px;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  margin-left: -480px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding-top: 10px;
+  z-index: 10;
+}
+.footer {
+  color: #ddd;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 20px;
+}
+.footer a {
+  color: #ccc;
+  text-decoration: underline;
+}
+.the-icons {
+  font-size: 14px;
+  line-height: 24px;
+}
+.switch {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  color: #666;
+}
+.switch input {
+  margin-right: 0.3em;
+}
+.codesOn .i-name {
+  display: none;
+}
+.codesOn .i-code {
+  display: inline;
+}
+.i-code {
+  display: none;
+}
+@font-face {
+      font-family: 'ciyamiconfont';
+      src: url('./font/ciyamiconfont.eot?8712152');
+      src: url('./font/ciyamiconfont.eot?8712152#iefix') format('embedded-opentype'),
+           url('./font/ciyamiconfont.woff?8712152') format('woff'),
+           url('./font/ciyamiconfont.ttf?8712152') format('truetype'),
+           url('./font/ciyamiconfont.svg?8712152#ciyamiconfont') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+     
+     
+    .demo-icon
+    {
+      font-family: "ciyamiconfont";
+      font-style: normal;
+      font-weight: normal;
+      speak: none;
+     
+      display: inline-block;
+      text-decoration: inherit;
+      width: 1em;
+      margin-right: .2em;
+      text-align: center;
+      /* opacity: .8; */
+     
+      /* For safety - reset parent styles, that can break glyph codes*/
+      font-variant: normal;
+      text-transform: none;
+     
+      /* fix buttons height, for twitter bootstrap */
+      line-height: 1em;
+     
+      /* Animation center compensation - margins should be symmetric */
+      /* remove if not needed */
+      margin-left: .2em;
+     
+      /* You can be more comfortable with increased icons size */
+      /* font-size: 120%; */
+     
+      /* Font smoothing. That was taken from TWBS */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+     
+      /* Uncomment for 3D effect */
+      /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+    }
+     </style>
+    <link rel="stylesheet" href="css/animation.css"><!--[if IE 7]><link rel="stylesheet" href="css/ciyamiconfont-ie7.css"><![endif]-->
+    <script>
+      function toggleCodes(on) {
+        var obj = document.getElementById('icons');
+        
+        if (on) {
+          obj.className += ' codesOn';
+        } else {
+          obj.className = obj.className.replace(' codesOn', '');
+        }
+      }
+      
+    </script>
+  </head>
+  <body>
+    <div class="container header">
+      <h1>
+        ciyamiconfont
+         <small>font demo</small>
+      </h1>
+      <label class="switch">
+        <input type="checkbox" onclick="toggleCodes(this.checked)">show codes
+      </label>
+    </div>
+    <div id="icons" class="container">
+      <div class="row">
+        <div title="Code: 0xe800" class="the-icons span3"><i class="demo-icon cif-abzar-foroshi">&#xe800;</i> <span class="i-name">cif-abzar-foroshi</span><span class="i-code">0xe800</span></div>
+        <div title="Code: 0xe801" class="the-icons span3"><i class="demo-icon cif-a-amaken-varzeshi">&#xe801;</i> <span class="i-name">cif-a-amaken-varzeshi</span><span class="i-code">0xe801</span></div>
+        <div title="Code: 0xe802" class="the-icons span3"><i class="demo-icon cif-a-asb">&#xe802;</i> <span class="i-name">cif-a-asb</span><span class="i-code">0xe802</span></div>
+        <div title="Code: 0xe803" class="the-icons span3"><i class="demo-icon cif-a-razmi">&#xe803;</i> <span class="i-name">cif-a-razmi</span><span class="i-code">0xe803</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe804" class="the-icons span3"><i class="demo-icon cif-a-basketball">&#xe804;</i> <span class="i-name">cif-a-basketball</span><span class="i-code">0xe804</span></div>
+        <div title="Code: 0xe805" class="the-icons span3"><i class="demo-icon cif-a-biliard">&#xe805;</i> <span class="i-name">cif-a-biliard</span><span class="i-code">0xe805</span></div>
+        <div title="Code: 0xe806" class="the-icons span3"><i class="demo-icon cif-ard-foroshi">&#xe806;</i> <span class="i-name">cif-ard-foroshi</span><span class="i-code">0xe806</span></div>
+        <div title="Code: 0xe807" class="the-icons span3"><i class="demo-icon cif-a-bowling">&#xe807;</i> <span class="i-name">cif-a-bowling</span><span class="i-code">0xe807</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe808" class="the-icons span3"><i class="demo-icon cif-a-badansazi">&#xe808;</i> <span class="i-name">cif-a-badansazi</span><span class="i-code">0xe808</span></div>
+        <div title="Code: 0xe809" class="the-icons span3"><i class="demo-icon cif-atash-neshani">&#xe809;</i> <span class="i-name">cif-atash-neshani</span><span class="i-code">0xe809</span></div>
+        <div title="Code: 0xe80a" class="the-icons span3"><i class="demo-icon cif-a-carting">&#xe80a;</i> <span class="i-name">cif-a-carting</span><span class="i-code">0xe80a</span></div>
+        <div title="Code: 0xe80b" class="the-icons span3"><i class="demo-icon cif-arayesh-zanane">&#xe80b;</i> <span class="i-name">cif-arayesh-zanane</span><span class="i-code">0xe80b</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe80c" class="the-icons span3"><i class="demo-icon cif-acvarium">&#xe80c;</i> <span class="i-name">cif-acvarium</span><span class="i-code">0xe80c</span></div>
+        <div title="Code: 0xe80d" class="the-icons span3"><i class="demo-icon cif-arayesh-mardaneh">&#xe80d;</i> <span class="i-name">cif-arayesh-mardaneh</span><span class="i-code">0xe80d</span></div>
+        <div title="Code: 0xe80e" class="the-icons span3"><i class="demo-icon cif-ash">&#xe80e;</i> <span class="i-name">cif-ash</span><span class="i-code">0xe80e</span></div>
+        <div title="Code: 0xe80f" class="the-icons span3"><i class="demo-icon cif-a-football">&#xe80f;</i> <span class="i-name">cif-a-football</span><span class="i-code">0xe80f</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe810" class="the-icons span3"><i class="demo-icon cif-a-golf">&#xe810;</i> <span class="i-name">cif-a-golf</span><span class="i-code">0xe810</span></div>
+        <div title="Code: 0xe811" class="the-icons span3"><i class="demo-icon cif-a-pist">&#xe811;</i> <span class="i-name">cif-a-pist</span><span class="i-code">0xe811</span></div>
+        <div title="Code: 0xe812" class="the-icons span3"><i class="demo-icon cif-airport">&#xe812;</i> <span class="i-name">cif-airport</span><span class="i-code">0xe812</span></div>
+        <div title="Code: 0xe813" class="the-icons span3"><i class="demo-icon cif-asal">&#xe813;</i> <span class="i-name">cif-asal</span><span class="i-code">0xe813</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe814" class="the-icons span3"><i class="demo-icon cif-bank-ayandeh">&#xe814;</i> <span class="i-name">cif-bank-ayandeh</span><span class="i-code">0xe814</span></div>
+        <div title="Code: 0xe815" class="the-icons span3"><i class="demo-icon cif-ajans-mosaferbari">&#xe815;</i> <span class="i-name">cif-ajans-mosaferbari</span><span class="i-code">0xe815</span></div>
+        <div title="Code: 0xe816" class="the-icons span3"><i class="demo-icon cif-a-pingpong">&#xe816;</i> <span class="i-name">cif-a-pingpong</span><span class="i-code">0xe816</span></div>
+        <div title="Code: 0xe817" class="the-icons span3"><i class="demo-icon cif-bank-eghtesadenovin">&#xe817;</i> <span class="i-name">cif-bank-eghtesadenovin</span><span class="i-code">0xe817</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe818" class="the-icons span3"><i class="demo-icon cif-a-paintball">&#xe818;</i> <span class="i-name">cif-a-paintball</span><span class="i-code">0xe818</span></div>
+        <div title="Code: 0xe819" class="the-icons span3"><i class="demo-icon cif-a-lavazem-shekar">&#xe819;</i> <span class="i-name">cif-a-lavazem-shekar</span><span class="i-code">0xe819</span></div>
+        <div title="Code: 0xe81a" class="the-icons span3"><i class="demo-icon cif-a-tennis">&#xe81a;</i> <span class="i-name">cif-a-tennis</span><span class="i-code">0xe81a</span></div>
+        <div title="Code: 0xe81b" class="the-icons span3"><i class="demo-icon cif-a-lavazem-varzeshi">&#xe81b;</i> <span class="i-name">cif-a-lavazem-varzeshi</span><span class="i-code">0xe81b</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe81c" class="the-icons span3"><i class="demo-icon cif-ambulance">&#xe81c;</i> <span class="i-name">cif-ambulance</span><span class="i-code">0xe81c</span></div>
+        <div title="Code: 0xe81d" class="the-icons span3"><i class="demo-icon cif-atr-odkolon">&#xe81d;</i> <span class="i-name">cif-atr-odkolon</span><span class="i-code">0xe81d</span></div>
+        <div title="Code: 0xe81e" class="the-icons span3"><i class="demo-icon cif-amozesh">&#xe81e;</i> <span class="i-name">cif-amozesh</span><span class="i-code">0xe81e</span></div>
+        <div title="Code: 0xe81f" class="the-icons span3"><i class="demo-icon cif-bank">&#xe81f;</i> <span class="i-name">cif-bank</span><span class="i-code">0xe81f</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe820" class="the-icons span3"><i class="demo-icon cif-bank-ansar">&#xe820;</i> <span class="i-name">cif-bank-ansar</span><span class="i-code">0xe820</span></div>
+        <div title="Code: 0xe821" class="the-icons span3"><i class="demo-icon cif-amozeshgah">&#xe821;</i> <span class="i-name">cif-amozeshgah</span><span class="i-code">0xe821</span></div>
+        <div title="Code: 0xe822" class="the-icons span3"><i class="demo-icon cif-amozesh-ranandegi">&#xe822;</i> <span class="i-name">cif-amozesh-ranandegi</span><span class="i-code">0xe822</span></div>
+        <div title="Code: 0xe823" class="the-icons span3"><i class="demo-icon cif-bank-day">&#xe823;</i> <span class="i-name">cif-bank-day</span><span class="i-code">0xe823</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe824" class="the-icons span3"><i class="demo-icon cif-animal">&#xe824;</i> <span class="i-name">cif-animal</span><span class="i-code">0xe824</span></div>
+        <div title="Code: 0xe825" class="the-icons span3"><i class="demo-icon cif-antique-ghadimi">&#xe825;</i> <span class="i-name">cif-antique-ghadimi</span><span class="i-code">0xe825</span></div>
+        <div title="Code: 0xe826" class="the-icons span3"><i class="demo-icon cif-bank-gavamin">&#xe826;</i> <span class="i-name">cif-bank-gavamin</span><span class="i-code">0xe826</span></div>
+        <div title="Code: 0xe827" class="the-icons span3"><i class="demo-icon cif-a-vallyball">&#xe827;</i> <span class="i-name">cif-a-vallyball</span><span class="i-code">0xe827</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe828" class="the-icons span3"><i class="demo-icon cif-atari">&#xe828;</i> <span class="i-name">cif-atari</span><span class="i-code">0xe828</span></div>
+        <div title="Code: 0xe829" class="the-icons span3"><i class="demo-icon cif-bank-hekmat-iranian">&#xe829;</i> <span class="i-name">cif-bank-hekmat-iranian</span><span class="i-code">0xe829</span></div>
+        <div title="Code: 0xe82a" class="the-icons span3"><i class="demo-icon cif-atm">&#xe82a;</i> <span class="i-name">cif-atm</span><span class="i-code">0xe82a</span></div>
+        <div title="Code: 0xe82b" class="the-icons span3"><i class="demo-icon cif-bank-shahr">&#xe82b;</i> <span class="i-name">cif-bank-shahr</span><span class="i-code">0xe82b</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe82c" class="the-icons span3"><i class="demo-icon cif-bank-sina">&#xe82c;</i> <span class="i-name">cif-bank-sina</span><span class="i-code">0xe82c</span></div>
+        <div title="Code: 0xe82d" class="the-icons span3"><i class="demo-icon cif-bank-kar-afarin">&#xe82d;</i> <span class="i-name">cif-bank-kar-afarin</span><span class="i-code">0xe82d</span></div>
+        <div title="Code: 0xe82e" class="the-icons span3"><i class="demo-icon cif-asare-tarikhi">&#xe82e;</i> <span class="i-name">cif-asare-tarikhi</span><span class="i-code">0xe82e</span></div>
+        <div title="Code: 0xe82f" class="the-icons span3"><i class="demo-icon cif-bank-keshavarzi">&#xe82f;</i> <span class="i-name">cif-bank-keshavarzi</span><span class="i-code">0xe82f</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe830" class="the-icons span3"><i class="demo-icon cif-bank-khavarmiane">&#xe830;</i> <span class="i-name">cif-bank-khavarmiane</span><span class="i-code">0xe830</span></div>
+        <div title="Code: 0xe831" class="the-icons span3"><i class="demo-icon cif-bank-refah">&#xe831;</i> <span class="i-name">cif-bank-refah</span><span class="i-code">0xe831</span></div>
+        <div title="Code: 0xe832" class="the-icons span3"><i class="demo-icon cif-bank-resalat">&#xe832;</i> <span class="i-name">cif-bank-resalat</span><span class="i-code">0xe832</span></div>
+        <div title="Code: 0xe833" class="the-icons span3"><i class="demo-icon cif-bank-saderat">&#xe833;</i> <span class="i-name">cif-bank-saderat</span><span class="i-code">0xe833</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe834" class="the-icons span3"><i class="demo-icon cif-bank-post-bank">&#xe834;</i> <span class="i-name">cif-bank-post-bank</span><span class="i-code">0xe834</span></div>
+        <div title="Code: 0xe835" class="the-icons span3"><i class="demo-icon cif-art-gallery">&#xe835;</i> <span class="i-name">cif-art-gallery</span><span class="i-code">0xe835</span></div>
+        <div title="Code: 0xe836" class="the-icons span3"><i class="demo-icon cif-bank-parsian">&#xe836;</i> <span class="i-name">cif-bank-parsian</span><span class="i-code">0xe836</span></div>
+        <div title="Code: 0xe837" class="the-icons span3"><i class="demo-icon cif-bank-gardeshgari">&#xe837;</i> <span class="i-name">cif-bank-gardeshgari</span><span class="i-code">0xe837</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe838" class="the-icons span3"><i class="demo-icon cif-bank-iran-zamin">&#xe838;</i> <span class="i-name">cif-bank-iran-zamin</span><span class="i-code">0xe838</span></div>
+        <div title="Code: 0xe839" class="the-icons span3"><i class="demo-icon cif-book">&#xe839;</i> <span class="i-name">cif-book</span><span class="i-code">0xe839</span></div>
+        <div title="Code: 0xe83a" class="the-icons span3"><i class="demo-icon cif-bank-maskan">&#xe83a;</i> <span class="i-name">cif-bank-maskan</span><span class="i-code">0xe83a</span></div>
+        <div title="Code: 0xe83b" class="the-icons span3"><i class="demo-icon cif-bike">&#xe83b;</i> <span class="i-name">cif-bike</span><span class="i-code">0xe83b</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe83c" class="the-icons span3"><i class="demo-icon cif-bus-stop">&#xe83c;</i> <span class="i-name">cif-bus-stop</span><span class="i-code">0xe83c</span></div>
+        <div title="Code: 0xe83d" class="the-icons span3"><i class="demo-icon cif-bus">&#xe83d;</i> <span class="i-name">cif-bus</span><span class="i-code">0xe83d</span></div>
+        <div title="Code: 0xe83e" class="the-icons span3"><i class="demo-icon cif-cake">&#xe83e;</i> <span class="i-name">cif-cake</span><span class="i-code">0xe83e</span></div>
+        <div title="Code: 0xe83f" class="the-icons span3"><i class="demo-icon cif-bank-tose-tavon">&#xe83f;</i> <span class="i-name">cif-bank-tose-tavon</span><span class="i-code">0xe83f</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe840" class="the-icons span3"><i class="demo-icon cif-bank-mehr">&#xe840;</i> <span class="i-name">cif-bank-mehr</span><span class="i-code">0xe840</span></div>
+        <div title="Code: 0xe841" class="the-icons span3"><i class="demo-icon cif-bank-mehreghtesad">&#xe841;</i> <span class="i-name">cif-bank-mehreghtesad</span><span class="i-code">0xe841</span></div>
+        <div title="Code: 0xe842" class="the-icons span3"><i class="demo-icon cif-bank-meli">&#xe842;</i> <span class="i-name">cif-bank-meli</span><span class="i-code">0xe842</span></div>
+        <div title="Code: 0xe843" class="the-icons span3"><i class="demo-icon cif-bank-pasargad">&#xe843;</i> <span class="i-name">cif-bank-pasargad</span><span class="i-code">0xe843</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe844" class="the-icons span3"><i class="demo-icon cif-bank-mellat">&#xe844;</i> <span class="i-name">cif-bank-mellat</span><span class="i-code">0xe844</span></div>
+        <div title="Code: 0xe845" class="the-icons span3"><i class="demo-icon cif-bank-samen">&#xe845;</i> <span class="i-name">cif-bank-samen</span><span class="i-code">0xe845</span></div>
+        <div title="Code: 0xe846" class="the-icons span3"><i class="demo-icon cif-bank-saman">&#xe846;</i> <span class="i-name">cif-bank-saman</span><span class="i-code">0xe846</span></div>
+        <div title="Code: 0xe847" class="the-icons span3"><i class="demo-icon cif-bank-sanat">&#xe847;</i> <span class="i-name">cif-bank-sanat</span><span class="i-code">0xe847</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe848" class="the-icons span3"><i class="demo-icon cif-bank-sarmaye">&#xe848;</i> <span class="i-name">cif-bank-sarmaye</span><span class="i-code">0xe848</span></div>
+        <div title="Code: 0xe849" class="the-icons span3"><i class="demo-icon cif-bank-sepah">&#xe849;</i> <span class="i-name">cif-bank-sepah</span><span class="i-code">0xe849</span></div>
+        <div title="Code: 0xe84a" class="the-icons span3"><i class="demo-icon cif-barname-nevisi">&#xe84a;</i> <span class="i-name">cif-barname-nevisi</span><span class="i-code">0xe84a</span></div>
+        <div title="Code: 0xe84b" class="the-icons span3"><i class="demo-icon cif-barbell">&#xe84b;</i> <span class="i-name">cif-barbell</span><span class="i-code">0xe84b</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe84c" class="the-icons span3"><i class="demo-icon cif-bank-tejarat">&#xe84c;</i> <span class="i-name">cif-bank-tejarat</span><span class="i-code">0xe84c</span></div>
+        <div title="Code: 0xe84d" class="the-icons span3"><i class="demo-icon cif-bargozari-majales">&#xe84d;</i> <span class="i-name">cif-bargozari-majales</span><span class="i-code">0xe84d</span></div>
+        <div title="Code: 0xe84e" class="the-icons span3"><i class="demo-icon cif-behdashti-arayeshi">&#xe84e;</i> <span class="i-name">cif-behdashti-arayeshi</span><span class="i-code">0xe84e</span></div>
+        <div title="Code: 0xe84f" class="the-icons span3"><i class="demo-icon cif-basecamp">&#xe84f;</i> <span class="i-name">cif-basecamp</span><span class="i-code">0xe84f</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe850" class="the-icons span3"><i class="demo-icon cif-bicycle">&#xe850;</i> <span class="i-name">cif-bicycle</span><span class="i-code">0xe850</span></div>
+        <div title="Code: 0xe851" class="the-icons span3"><i class="demo-icon cif-daftar-khane">&#xe851;</i> <span class="i-name">cif-daftar-khane</span><span class="i-code">0xe851</span></div>
+        <div title="Code: 0xe852" class="the-icons span3"><i class="demo-icon cif-bazyabi-etelat">&#xe852;</i> <span class="i-name">cif-bazyabi-etelat</span><span class="i-code">0xe852</span></div>
+        <div title="Code: 0xe853" class="the-icons span3"><i class="demo-icon cif-bicycle-stop">&#xe853;</i> <span class="i-name">cif-bicycle-stop</span><span class="i-code">0xe853</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe854" class="the-icons span3"><i class="demo-icon cif-bowling">&#xe854;</i> <span class="i-name">cif-bowling</span><span class="i-code">0xe854</span></div>
+        <div title="Code: 0xe855" class="the-icons span3"><i class="demo-icon cif-bus-beinshahri">&#xe855;</i> <span class="i-name">cif-bus-beinshahri</span><span class="i-code">0xe855</span></div>
+        <div title="Code: 0xe856" class="the-icons span3"><i class="demo-icon cif-cafi-net">&#xe856;</i> <span class="i-name">cif-cafi-net</span><span class="i-code">0xe856</span></div>
+        <div title="Code: 0xe857" class="the-icons span3"><i class="demo-icon cif-carvash">&#xe857;</i> <span class="i-name">cif-carvash</span><span class="i-code">0xe857</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe858" class="the-icons span3"><i class="demo-icon cif-car-wash">&#xe858;</i> <span class="i-name">cif-car-wash</span><span class="i-code">0xe858</span></div>
+        <div title="Code: 0xe859" class="the-icons span3"><i class="demo-icon cif-cemetery">&#xe859;</i> <span class="i-name">cif-cemetery</span><span class="i-code">0xe859</span></div>
+        <div title="Code: 0xe85a" class="the-icons span3"><i class="demo-icon cif-chai-ghahve">&#xe85a;</i> <span class="i-name">cif-chai-ghahve</span><span class="i-code">0xe85a</span></div>
+        <div title="Code: 0xe85b" class="the-icons span3"><i class="demo-icon cif-chruch">&#xe85b;</i> <span class="i-name">cif-chruch</span><span class="i-code">0xe85b</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe85c" class="the-icons span3"><i class="demo-icon cif-circuit-board">&#xe85c;</i> <span class="i-name">cif-circuit-board</span><span class="i-code">0xe85c</span></div>
+        <div title="Code: 0xe85d" class="the-icons span3"><i class="demo-icon cif-clinic">&#xe85d;</i> <span class="i-name">cif-clinic</span><span class="i-code">0xe85d</span></div>
+        <div title="Code: 0xe85e" class="the-icons span3"><i class="demo-icon cif-coffee">&#xe85e;</i> <span class="i-name">cif-coffee</span><span class="i-code">0xe85e</span></div>
+        <div title="Code: 0xe85f" class="the-icons span3"><i class="demo-icon cif-clothing-store">&#xe85f;</i> <span class="i-name">cif-clothing-store</span><span class="i-code">0xe85f</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe860" class="the-icons span3"><i class="demo-icon cif-chini-bolor">&#xe860;</i> <span class="i-name">cif-chini-bolor</span><span class="i-code">0xe860</span></div>
+        <div title="Code: 0xe861" class="the-icons span3"><i class="demo-icon cif-cinema">&#xe861;</i> <span class="i-name">cif-cinema</span><span class="i-code">0xe861</span></div>
+        <div title="Code: 0xe862" class="the-icons span3"><i class="demo-icon cif-cigarettes">&#xe862;</i> <span class="i-name">cif-cigarettes</span><span class="i-code">0xe862</span></div>
+        <div title="Code: 0xe863" class="the-icons span3"><i class="demo-icon cif-ciyam">&#xe863;</i> <span class="i-name">cif-ciyam</span><span class="i-code">0xe863</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe864" class="the-icons span3"><i class="demo-icon cif-disability">&#xe864;</i> <span class="i-name">cif-disability</span><span class="i-code">0xe864</span></div>
+        <div title="Code: 0xe865" class="the-icons span3"><i class="demo-icon cif-convenience-store">&#xe865;</i> <span class="i-name">cif-convenience-store</span><span class="i-code">0xe865</span></div>
+        <div title="Code: 0xe866" class="the-icons span3"><i class="demo-icon cif-fani-herfei">&#xe866;</i> <span class="i-name">cif-fani-herfei</span><span class="i-code">0xe866</span></div>
+        <div title="Code: 0xe867" class="the-icons span3"><i class="demo-icon cif-farm">&#xe867;</i> <span class="i-name">cif-farm</span><span class="i-code">0xe867</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe868" class="the-icons span3"><i class="demo-icon cif-flower">&#xe868;</i> <span class="i-name">cif-flower</span><span class="i-code">0xe868</span></div>
+        <div title="Code: 0xe869" class="the-icons span3"><i class="demo-icon cif-farsh-foroshi">&#xe869;</i> <span class="i-name">cif-farsh-foroshi</span><span class="i-code">0xe869</span></div>
+        <div title="Code: 0xe86a" class="the-icons span3"><i class="demo-icon cif-cheshm-pezeshki">&#xe86a;</i> <span class="i-name">cif-cheshm-pezeshki</span><span class="i-code">0xe86a</span></div>
+        <div title="Code: 0xe86b" class="the-icons span3"><i class="demo-icon cif-doctor-m">&#xe86b;</i> <span class="i-name">cif-doctor-m</span><span class="i-code">0xe86b</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe86c" class="the-icons span3"><i class="demo-icon cif-doctor-cheshm">&#xe86c;</i> <span class="i-name">cif-doctor-cheshm</span><span class="i-code">0xe86c</span></div>
+        <div title="Code: 0xe86d" class="the-icons span3"><i class="demo-icon cif-florist">&#xe86d;</i> <span class="i-name">cif-florist</span><span class="i-code">0xe86d</span></div>
+        <div title="Code: 0xe86e" class="the-icons span3"><i class="demo-icon cif-fuel">&#xe86e;</i> <span class="i-name">cif-fuel</span><span class="i-code">0xe86e</span></div>
+        <div title="Code: 0xe86f" class="the-icons span3"><i class="demo-icon cif-gas">&#xe86f;</i> <span class="i-name">cif-gas</span><span class="i-code">0xe86f</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe870" class="the-icons span3"><i class="demo-icon cif-ghahvekhane">&#xe870;</i> <span class="i-name">cif-ghahvekhane</span><span class="i-code">0xe870</span></div>
+        <div title="Code: 0xe871" class="the-icons span3"><i class="demo-icon cif-dentist">&#xe871;</i> <span class="i-name">cif-dentist</span><span class="i-code">0xe871</span></div>
+        <div title="Code: 0xe872" class="the-icons span3"><i class="demo-icon cif-dollar">&#xe872;</i> <span class="i-name">cif-dollar</span><span class="i-code">0xe872</span></div>
+        <div title="Code: 0xe873" class="the-icons span3"><i class="demo-icon cif-drag-store">&#xe873;</i> <span class="i-name">cif-drag-store</span><span class="i-code">0xe873</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe874" class="the-icons span3"><i class="demo-icon cif-edare">&#xe874;</i> <span class="i-name">cif-edare</span><span class="i-code">0xe874</span></div>
+        <div title="Code: 0xe875" class="the-icons span3"><i class="demo-icon cif-ghanadi">&#xe875;</i> <span class="i-name">cif-ghanadi</span><span class="i-code">0xe875</span></div>
+        <div title="Code: 0xe876" class="the-icons span3"><i class="demo-icon cif-folder">&#xe876;</i> <span class="i-name">cif-folder</span><span class="i-code">0xe876</span></div>
+        <div title="Code: 0xe877" class="the-icons span3"><i class="demo-icon cif-food">&#xe877;</i> <span class="i-name">cif-food</span><span class="i-code">0xe877</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe878" class="the-icons span3"><i class="demo-icon cif-ghand-shekar">&#xe878;</i> <span class="i-name">cif-ghand-shekar</span><span class="i-code">0xe878</span></div>
+        <div title="Code: 0xe879" class="the-icons span3"><i class="demo-icon cif-glasses">&#xe879;</i> <span class="i-name">cif-glasses</span><span class="i-code">0xe879</span></div>
+        <div title="Code: 0xe87a" class="the-icons span3"><i class="demo-icon cif-gosht-foroshi">&#xe87a;</i> <span class="i-name">cif-gosht-foroshi</span><span class="i-code">0xe87a</span></div>
+        <div title="Code: 0xe87b" class="the-icons span3"><i class="demo-icon cif-gh-mehre-iran">&#xe87b;</i> <span class="i-name">cif-gh-mehre-iran</span><span class="i-code">0xe87b</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe87c" class="the-icons span3"><i class="demo-icon cif-graduate">&#xe87c;</i> <span class="i-name">cif-graduate</span><span class="i-code">0xe87c</span></div>
+        <div title="Code: 0xe87d" class="the-icons span3"><i class="demo-icon cif-gov-abfa">&#xe87d;</i> <span class="i-name">cif-gov-abfa</span><span class="i-code">0xe87d</span></div>
+        <div title="Code: 0xe87e" class="the-icons span3"><i class="demo-icon cif-fastfood-1">&#xe87e;</i> <span class="i-name">cif-fastfood-1</span><span class="i-code">0xe87e</span></div>
+        <div title="Code: 0xe87f" class="the-icons span3"><i class="demo-icon cif-car">&#xe87f;</i> <span class="i-name">cif-car</span><span class="i-code">0xe87f</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe880" class="the-icons span3"><i class="demo-icon cif-desktop-mac">&#xe880;</i> <span class="i-name">cif-desktop-mac</span><span class="i-code">0xe880</span></div>
+        <div title="Code: 0xe881" class="the-icons span3"><i class="demo-icon cif-doctor">&#xe881;</i> <span class="i-name">cif-doctor</span><span class="i-code">0xe881</span></div>
+        <div title="Code: 0xe882" class="the-icons span3"><i class="demo-icon cif-computer-foroshi">&#xe882;</i> <span class="i-name">cif-computer-foroshi</span><span class="i-code">0xe882</span></div>
+        <div title="Code: 0xe883" class="the-icons span3"><i class="demo-icon cif-dandan">&#xe883;</i> <span class="i-name">cif-dandan</span><span class="i-code">0xe883</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe884" class="the-icons span3"><i class="demo-icon cif-daneshga">&#xe884;</i> <span class="i-name">cif-daneshga</span><span class="i-code">0xe884</span></div>
+        <div title="Code: 0xe885" class="the-icons span3"><i class="demo-icon cif-dast-saz">&#xe885;</i> <span class="i-name">cif-dast-saz</span><span class="i-code">0xe885</span></div>
+        <div title="Code: 0xe886" class="the-icons span3"><i class="demo-icon cif-fast-food">&#xe886;</i> <span class="i-name">cif-fast-food</span><span class="i-code">0xe886</span></div>
+        <div title="Code: 0xe887" class="the-icons span3"><i class="demo-icon cif-fire">&#xe887;</i> <span class="i-name">cif-fire</span><span class="i-code">0xe887</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe888" class="the-icons span3"><i class="demo-icon cif-device-mobile">&#xe888;</i> <span class="i-name">cif-device-mobile</span><span class="i-code">0xe888</span></div>
+        <div title="Code: 0xe889" class="the-icons span3"><i class="demo-icon cif-f-refah">&#xe889;</i> <span class="i-name">cif-f-refah</span><span class="i-code">0xe889</span></div>
+        <div title="Code: 0xe88a" class="the-icons span3"><i class="demo-icon cif-f-shahrvand">&#xe88a;</i> <span class="i-name">cif-f-shahrvand</span><span class="i-code">0xe88a</span></div>
+        <div title="Code: 0xe88b" class="the-icons span3"><i class="demo-icon cif-college">&#xe88b;</i> <span class="i-name">cif-college</span><span class="i-code">0xe88b</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe88c" class="the-icons span3"><i class="demo-icon cif-child">&#xe88c;</i> <span class="i-name">cif-child</span><span class="i-code">0xe88c</span></div>
+        <div title="Code: 0xe88d" class="the-icons span3"><i class="demo-icon cif-female">&#xe88d;</i> <span class="i-name">cif-female</span><span class="i-code">0xe88d</span></div>
+        <div title="Code: 0xe88e" class="the-icons span3"><i class="demo-icon cif-f-etka">&#xe88e;</i> <span class="i-name">cif-f-etka</span><span class="i-code">0xe88e</span></div>
+        <div title="Code: 0xe88f" class="the-icons span3"><i class="demo-icon cif-ghasabi">&#xe88f;</i> <span class="i-name">cif-ghasabi</span><span class="i-code">0xe88f</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe890" class="the-icons span3"><i class="demo-icon cif-injection">&#xe890;</i> <span class="i-name">cif-injection</span><span class="i-code">0xe890</span></div>
+        <div title="Code: 0xe891" class="the-icons span3"><i class="demo-icon cif-game-net">&#xe891;</i> <span class="i-name">cif-game-net</span><span class="i-code">0xe891</span></div>
+        <div title="Code: 0xe892" class="the-icons span3"><i class="demo-icon cif-ins-karafarin">&#xe892;</i> <span class="i-name">cif-ins-karafarin</span><span class="i-code">0xe892</span></div>
+        <div title="Code: 0xe893" class="the-icons span3"><i class="demo-icon cif-hairdresser">&#xe893;</i> <span class="i-name">cif-hairdresser</span><span class="i-code">0xe893</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe894" class="the-icons span3"><i class="demo-icon cif-ins-iran">&#xe894;</i> <span class="i-name">cif-ins-iran</span><span class="i-code">0xe894</span></div>
+        <div title="Code: 0xe895" class="the-icons span3"><i class="demo-icon cif-hakaki">&#xe895;</i> <span class="i-name">cif-hakaki</span><span class="i-code">0xe895</span></div>
+        <div title="Code: 0xe896" class="the-icons span3"><i class="demo-icon cif-ice-cubes">&#xe896;</i> <span class="i-name">cif-ice-cubes</span><span class="i-code">0xe896</span></div>
+        <div title="Code: 0xe897" class="the-icons span3"><i class="demo-icon cif-hamrah-tajhizat">&#xe897;</i> <span class="i-name">cif-hamrah-tajhizat</span><span class="i-code">0xe897</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe898" class="the-icons span3"><i class="demo-icon cif-ins-pasargad">&#xe898;</i> <span class="i-name">cif-ins-pasargad</span><span class="i-code">0xe898</span></div>
+        <div title="Code: 0xe899" class="the-icons span3"><i class="demo-icon cif-hospital">&#xe899;</i> <span class="i-name">cif-hospital</span><span class="i-code">0xe899</span></div>
+        <div title="Code: 0xe89a" class="the-icons span3"><i class="demo-icon cif-hyper-market">&#xe89a;</i> <span class="i-name">cif-hyper-market</span><span class="i-code">0xe89a</span></div>
+        <div title="Code: 0xe89b" class="the-icons span3"><i class="demo-icon cif-ins-alborz">&#xe89b;</i> <span class="i-name">cif-ins-alborz</span><span class="i-code">0xe89b</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe89c" class="the-icons span3"><i class="demo-icon cif-ins-parsian">&#xe89c;</i> <span class="i-name">cif-ins-parsian</span><span class="i-code">0xe89c</span></div>
+        <div title="Code: 0xe89d" class="the-icons span3"><i class="demo-icon cif-ins-dana">&#xe89d;</i> <span class="i-name">cif-ins-dana</span><span class="i-code">0xe89d</span></div>
+        <div title="Code: 0xe89e" class="the-icons span3"><i class="demo-icon cif-ins-arman">&#xe89e;</i> <span class="i-name">cif-ins-arman</span><span class="i-code">0xe89e</span></div>
+        <div title="Code: 0xe89f" class="the-icons span3"><i class="demo-icon cif-jegar">&#xe89f;</i> <span class="i-name">cif-jegar</span><span class="i-code">0xe89f</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe8a0" class="the-icons span3"><i class="demo-icon cif-ins-tamin-ejtemai-kargozari">&#xe8a0;</i> <span class="i-name">cif-ins-tamin-ejtemai-kargozari</span><span class="i-code">0xe8a0</span></div>
+        <div title="Code: 0xe8a1" class="the-icons span3"><i class="demo-icon cif-kababi">&#xe8a1;</i> <span class="i-name">cif-kababi</span><span class="i-code">0xe8a1</span></div>
+        <div title="Code: 0xe8a2" class="the-icons span3"><i class="demo-icon cif-kabab-torki">&#xe8a2;</i> <span class="i-name">cif-kabab-torki</span><span class="i-code">0xe8a2</span></div>
+        <div title="Code: 0xe8a3" class="the-icons span3"><i class="demo-icon cif-justice">&#xe8a3;</i> <span class="i-name">cif-justice</span><span class="i-code">0xe8a3</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe8a4" class="the-icons span3"><i class="demo-icon cif-kharazi">&#xe8a4;</i> <span class="i-name">cif-kharazi</span><span class="i-code">0xe8a4</span></div>
+        <div title="Code: 0xe8a5" class="the-icons span3"><i class="demo-icon cif-ins-ma">&#xe8a5;</i> <span class="i-name">cif-ins-ma</span><span class="i-code">0xe8a5</span></div>
+        <div title="Code: 0xe8a6" class="the-icons span3"><i class="demo-icon cif-hotel">&#xe8a6;</i> <span class="i-name">cif-hotel</span><span class="i-code">0xe8a6</span></div>
+        <div title="Code: 0xe8a7" class="the-icons span3"><i class="demo-icon cif-k-mardane">&#xe8a7;</i> <span class="i-name">cif-k-mardane</span><span class="i-code">0xe8a7</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe8a8" class="the-icons span3"><i class="demo-icon cif-ins-day">&#xe8a8;</i> <span class="i-name">cif-ins-day</span><span class="i-code">0xe8a8</span></div>
+        <div title="Code: 0xe8a9" class="the-icons span3"><i class="demo-icon cif-icecream">&#xe8a9;</i> <span class="i-name">cif-icecream</span><span class="i-code">0xe8a9</span></div>
+        <div title="Code: 0xe8aa" class="the-icons span3"><i class="demo-icon cif-ins-hafez">&#xe8aa;</i> <span class="i-name">cif-ins-hafez</span><span class="i-code">0xe8aa</span></div>
+        <div title="Code: 0xe8ab" class="the-icons span3"><i class="demo-icon cif-ins-mihan">&#xe8ab;</i> <span class="i-name">cif-ins-mihan</span><span class="i-code">0xe8ab</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe8ac" class="the-icons span3"><i class="demo-icon cif-ins-tamin-ejtemaii">&#xe8ac;</i> <span class="i-name">cif-ins-tamin-ejtemaii</span><span class="i-code">0xe8ac</span></div>
+        <div title="Code: 0xe8ad" class="the-icons span3"><i class="demo-icon cif-ins-razi">&#xe8ad;</i> <span class="i-name">cif-ins-razi</span><span class="i-code">0xe8ad</span></div>
+        <div title="Code: 0xe8ae" class="the-icons span3"><i class="demo-icon cif-kelid-sazi">&#xe8ae;</i> <span class="i-name">cif-kelid-sazi</span><span class="i-code">0xe8ae</span></div>
+        <div title="Code: 0xe8af" class="the-icons span3"><i class="demo-icon cif-internet">&#xe8af;</i> <span class="i-name">cif-internet</span><span class="i-code">0xe8af</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe8b0" class="the-icons span3"><i class="demo-icon cif-jazebe-toristi">&#xe8b0;</i> <span class="i-name">cif-jazebe-toristi</span><span class="i-code">0xe8b0</span></div>
+        <div title="Code: 0xe8b1" class="the-icons span3"><i class="demo-icon cif-kale-pacheh">&#xe8b1;</i> <span class="i-name">cif-kale-pacheh</span><span class="i-code">0xe8b1</span></div>
+        <div title="Code: 0xe8b2" class="the-icons span3"><i class="demo-icon cif-kentaki">&#xe8b2;</i> <span class="i-name">cif-kentaki</span><span class="i-code">0xe8b2</span></div>
+        <div title="Code: 0xe8b3" class="the-icons span3"><i class="demo-icon cif-khadamat-shabake">&#xe8b3;</i> <span class="i-name">cif-khadamat-shabake</span><span class="i-code">0xe8b3</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe8b4" class="the-icons span3"><i class="demo-icon cif-k-zanane">&#xe8b4;</i> <span class="i-name">cif-k-zanane</span><span class="i-code">0xe8b4</span></div>
+        <div title="Code: 0xe8b5" class="the-icons span3"><i class="demo-icon cif-konsol-gari">&#xe8b5;</i> <span class="i-name">cif-konsol-gari</span><span class="i-code">0xe8b5</span></div>
+        <div title="Code: 0xe8b6" class="the-icons span3"><i class="demo-icon cif-mahd-kodak">&#xe8b6;</i> <span class="i-name">cif-mahd-kodak</span><span class="i-code">0xe8b6</span></div>
+        <div title="Code: 0xe8b7" class="the-icons span3"><i class="demo-icon cif-ins-asia">&#xe8b7;</i> <span class="i-name">cif-ins-asia</span><span class="i-code">0xe8b7</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe8b8" class="the-icons span3"><i class="demo-icon cif-ins-kosar">&#xe8b8;</i> <span class="i-name">cif-ins-kosar</span><span class="i-code">0xe8b8</span></div>
+        <div title="Code: 0xe8b9" class="the-icons span3"><i class="demo-icon cif-ins-markazi">&#xe8b9;</i> <span class="i-name">cif-ins-markazi</span><span class="i-code">0xe8b9</span></div>
+        <div title="Code: 0xe8ba" class="the-icons span3"><i class="demo-icon cif-ins-moalem">&#xe8ba;</i> <span class="i-name">cif-ins-moalem</span><span class="i-code">0xe8ba</span></div>
+        <div title="Code: 0xe8bb" class="the-icons span3"><i class="demo-icon cif-khoshkbar">&#xe8bb;</i> <span class="i-name">cif-khoshkbar</span><span class="i-code">0xe8bb</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe8bc" class="the-icons span3"><i class="demo-icon cif-ins-novin">&#xe8bc;</i> <span class="i-name">cif-ins-novin</span><span class="i-code">0xe8bc</span></div>
+        <div title="Code: 0xe8bd" class="the-icons span3"><i class="demo-icon cif-markaz-moayne-fani">&#xe8bd;</i> <span class="i-name">cif-markaz-moayne-fani</span><span class="i-code">0xe8bd</span></div>
+        <div title="Code: 0xe8be" class="the-icons span3"><i class="demo-icon cif-keraye-mashin">&#xe8be;</i> <span class="i-name">cif-keraye-mashin</span><span class="i-code">0xe8be</span></div>
+        <div title="Code: 0xe8bf" class="the-icons span3"><i class="demo-icon cif-ins-saman">&#xe8bf;</i> <span class="i-name">cif-ins-saman</span><span class="i-code">0xe8bf</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe8c0" class="the-icons span3"><i class="demo-icon cif-komod">&#xe8c0;</i> <span class="i-name">cif-komod</span><span class="i-code">0xe8c0</span></div>
+        <div title="Code: 0xe8c1" class="the-icons span3"><i class="demo-icon cif-island">&#xe8c1;</i> <span class="i-name">cif-island</span><span class="i-code">0xe8c1</span></div>
+        <div title="Code: 0xe8c2" class="the-icons span3"><i class="demo-icon cif-koze-sofal">&#xe8c2;</i> <span class="i-name">cif-koze-sofal</span><span class="i-code">0xe8c2</span></div>
+        <div title="Code: 0xe8c3" class="the-icons span3"><i class="demo-icon cif-ketab_foroshi">&#xe8c3;</i> <span class="i-name">cif-ketab_foroshi</span><span class="i-code">0xe8c3</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe8c4" class="the-icons span3"><i class="demo-icon cif-khoshk-shoii">&#xe8c4;</i> <span class="i-name">cif-khoshk-shoii</span><span class="i-code">0xe8c4</span></div>
+        <div title="Code: 0xe8c5" class="the-icons span3"><i class="demo-icon cif-lavazem-ashpazkhane">&#xe8c5;</i> <span class="i-name">cif-lavazem-ashpazkhane</span><span class="i-code">0xe8c5</span></div>
+        <div title="Code: 0xe8c6" class="the-icons span3"><i class="demo-icon cif-lab">&#xe8c6;</i> <span class="i-name">cif-lab</span><span class="i-code">0xe8c6</span></div>
+        <div title="Code: 0xe8c7" class="the-icons span3"><i class="demo-icon cif-lavazem-kadoii">&#xe8c7;</i> <span class="i-name">cif-lavazem-kadoii</span><span class="i-code">0xe8c7</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe8c8" class="the-icons span3"><i class="demo-icon cif-mm-mali">&#xe8c8;</i> <span class="i-name">cif-mm-mali</span><span class="i-code">0xe8c8</span></div>
+        <div title="Code: 0xe8c9" class="the-icons span3"><i class="demo-icon cif-lavazem-yadaki">&#xe8c9;</i> <span class="i-name">cif-lavazem-yadaki</span><span class="i-code">0xe8c9</span></div>
+        <div title="Code: 0xe8ca" class="the-icons span3"><i class="demo-icon cif-lebas-aros">&#xe8ca;</i> <span class="i-name">cif-lebas-aros</span><span class="i-code">0xe8ca</span></div>
+        <div title="Code: 0xe8cb" class="the-icons span3"><i class="demo-icon cif-markaz-behdasht">&#xe8cb;</i> <span class="i-name">cif-markaz-behdasht</span><span class="i-code">0xe8cb</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe8cc" class="the-icons span3"><i class="demo-icon cif-male">&#xe8cc;</i> <span class="i-name">cif-male</span><span class="i-code">0xe8cc</span></div>
+        <div title="Code: 0xe8cd" class="the-icons span3"><i class="demo-icon cif-microscope">&#xe8cd;</i> <span class="i-name">cif-microscope</span><span class="i-code">0xe8cd</span></div>
+        <div title="Code: 0xe8ce" class="the-icons span3"><i class="demo-icon cif-mazhabi">&#xe8ce;</i> <span class="i-name">cif-mazhabi</span><span class="i-code">0xe8ce</span></div>
+        <div title="Code: 0xe8cf" class="the-icons span3"><i class="demo-icon cif-labaniat">&#xe8cf;</i> <span class="i-name">cif-labaniat</span><span class="i-code">0xe8cf</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe8d0" class="the-icons span3"><i class="demo-icon cif-lavazem-arayesh">&#xe8d0;</i> <span class="i-name">cif-lavazem-arayesh</span><span class="i-code">0xe8d0</span></div>
+        <div title="Code: 0xe8d1" class="the-icons span3"><i class="demo-icon cif-moshaver-amlak">&#xe8d1;</i> <span class="i-name">cif-moshaver-amlak</span><span class="i-code">0xe8d1</span></div>
+        <div title="Code: 0xe8d2" class="the-icons span3"><i class="demo-icon cif-lole-bazkoni">&#xe8d2;</i> <span class="i-name">cif-lole-bazkoni</span><span class="i-code">0xe8d2</span></div>
+        <div title="Code: 0xe8d3" class="the-icons span3"><i class="demo-icon cif-madrese">&#xe8d3;</i> <span class="i-name">cif-madrese</span><span class="i-code">0xe8d3</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe8d4" class="the-icons span3"><i class="demo-icon cif-mosque1">&#xe8d4;</i> <span class="i-name">cif-mosque1</span><span class="i-code">0xe8d4</span></div>
+        <div title="Code: 0xe8d5" class="the-icons span3"><i class="demo-icon cif-mall">&#xe8d5;</i> <span class="i-name">cif-mall</span><span class="i-code">0xe8d5</span></div>
+        <div title="Code: 0xe8d6" class="the-icons span3"><i class="demo-icon cif-namayesh-mashin">&#xe8d6;</i> <span class="i-name">cif-namayesh-mashin</span><span class="i-code">0xe8d6</span></div>
+        <div title="Code: 0xe8d7" class="the-icons span3"><i class="demo-icon cif-mahi-foroshi">&#xe8d7;</i> <span class="i-name">cif-mahi-foroshi</span><span class="i-code">0xe8d7</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe8d8" class="the-icons span3"><i class="demo-icon cif-mavad-ghazaii">&#xe8d8;</i> <span class="i-name">cif-mavad-ghazaii</span><span class="i-code">0xe8d8</span></div>
+        <div title="Code: 0xe8d9" class="the-icons span3"><i class="demo-icon cif-mm-afzaltoos">&#xe8d9;</i> <span class="i-name">cif-mm-afzaltoos</span><span class="i-code">0xe8d9</span></div>
+        <div title="Code: 0xe8da" class="the-icons span3"><i class="demo-icon cif-mm-arman">&#xe8da;</i> <span class="i-name">cif-mm-arman</span><span class="i-code">0xe8da</span></div>
+        <div title="Code: 0xe8db" class="the-icons span3"><i class="demo-icon cif-library">&#xe8db;</i> <span class="i-name">cif-library</span><span class="i-code">0xe8db</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe8dc" class="the-icons span3"><i class="demo-icon cif-mehman-pazir">&#xe8dc;</i> <span class="i-name">cif-mehman-pazir</span><span class="i-code">0xe8dc</span></div>
+        <div title="Code: 0xe8dd" class="the-icons span3"><i class="demo-icon cif-medicine">&#xe8dd;</i> <span class="i-name">cif-medicine</span><span class="i-code">0xe8dd</span></div>
+        <div title="Code: 0xe8de" class="the-icons span3"><i class="demo-icon cif-mezon">&#xe8de;</i> <span class="i-name">cif-mezon</span><span class="i-code">0xe8de</span></div>
+        <div title="Code: 0xe8df" class="the-icons span3"><i class="demo-icon cif-mm-mizan">&#xe8df;</i> <span class="i-name">cif-mm-mizan</span><span class="i-code">0xe8df</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe8e0" class="the-icons span3"><i class="demo-icon cif-parking-disabled">&#xe8e0;</i> <span class="i-name">cif-parking-disabled</span><span class="i-code">0xe8e0</span></div>
+        <div title="Code: 0xe8e1" class="the-icons span3"><i class="demo-icon cif-mm-noor">&#xe8e1;</i> <span class="i-name">cif-mm-noor</span><span class="i-code">0xe8e1</span></div>
+        <div title="Code: 0xe8e2" class="the-icons span3"><i class="demo-icon cif-mm-samen">&#xe8e2;</i> <span class="i-name">cif-mm-samen</span><span class="i-code">0xe8e2</span></div>
+        <div title="Code: 0xe8e3" class="the-icons span3"><i class="demo-icon cif-minibus-stop">&#xe8e3;</i> <span class="i-name">cif-minibus-stop</span><span class="i-code">0xe8e3</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe8e4" class="the-icons span3"><i class="demo-icon cif-mive-foroshi">&#xe8e4;</i> <span class="i-name">cif-mive-foroshi</span><span class="i-code">0xe8e4</span></div>
+        <div title="Code: 0xe8e5" class="the-icons span3"><i class="demo-icon cif-mm-kosar">&#xe8e5;</i> <span class="i-name">cif-mm-kosar</span><span class="i-code">0xe8e5</span></div>
+        <div title="Code: 0xe8e6" class="the-icons span3"><i class="demo-icon cif-mm-askarie">&#xe8e6;</i> <span class="i-name">cif-mm-askarie</span><span class="i-code">0xe8e6</span></div>
+        <div title="Code: 0xe8e7" class="the-icons span3"><i class="demo-icon cif-mm-samen-alhojaj">&#xe8e7;</i> <span class="i-name">cif-mm-samen-alhojaj</span><span class="i-code">0xe8e7</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe8e8" class="the-icons span3"><i class="demo-icon cif-morgh-foroshi">&#xe8e8;</i> <span class="i-name">cif-morgh-foroshi</span><span class="i-code">0xe8e8</span></div>
+        <div title="Code: 0xe8e9" class="the-icons span3"><i class="demo-icon cif-mojtama">&#xe8e9;</i> <span class="i-name">cif-mojtama</span><span class="i-code">0xe8e9</span></div>
+        <div title="Code: 0xe8ea" class="the-icons span3"><i class="demo-icon cif-mojtama-farhangi">&#xe8ea;</i> <span class="i-name">cif-mojtama-farhangi</span><span class="i-code">0xe8ea</span></div>
+        <div title="Code: 0xe8eb" class="the-icons span3"><i class="demo-icon cif-markaz-moayene-fani">&#xe8eb;</i> <span class="i-name">cif-markaz-moayene-fani</span><span class="i-code">0xe8eb</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe8ec" class="the-icons span3"><i class="demo-icon cif-mokhaberat">&#xe8ec;</i> <span class="i-name">cif-mokhaberat</span><span class="i-code">0xe8ec</span></div>
+        <div title="Code: 0xe8ed" class="the-icons span3"><i class="demo-icon cif-p-mardane">&#xe8ed;</i> <span class="i-name">cif-p-mardane</span><span class="i-code">0xe8ed</span></div>
+        <div title="Code: 0xe8ee" class="the-icons span3"><i class="demo-icon cif-music">&#xe8ee;</i> <span class="i-name">cif-music</span><span class="i-code">0xe8ee</span></div>
+        <div title="Code: 0xe8ef" class="the-icons span3"><i class="demo-icon cif-policeman">&#xe8ef;</i> <span class="i-name">cif-policeman</span><span class="i-code">0xe8ef</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe8f0" class="the-icons span3"><i class="demo-icon cif-polis10">&#xe8f0;</i> <span class="i-name">cif-polis10</span><span class="i-code">0xe8f0</span></div>
+        <div title="Code: 0xe8f1" class="the-icons span3"><i class="demo-icon cif-ordogah">&#xe8f1;</i> <span class="i-name">cif-ordogah</span><span class="i-code">0xe8f1</span></div>
+        <div title="Code: 0xe8f2" class="the-icons span3"><i class="demo-icon cif-phone-tajhizat">&#xe8f2;</i> <span class="i-name">cif-phone-tajhizat</span><span class="i-code">0xe8f2</span></div>
+        <div title="Code: 0xe8f3" class="the-icons span3"><i class="demo-icon cif-park">&#xe8f3;</i> <span class="i-name">cif-park</span><span class="i-code">0xe8f3</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe8f4" class="the-icons span3"><i class="demo-icon cif-pishkhan-dolat">&#xe8f4;</i> <span class="i-name">cif-pishkhan-dolat</span><span class="i-code">0xe8f4</span></div>
+        <div title="Code: 0xe8f5" class="the-icons span3"><i class="demo-icon cif-power">&#xe8f5;</i> <span class="i-name">cif-power</span><span class="i-code">0xe8f5</span></div>
+        <div title="Code: 0xe8f6" class="the-icons span3"><i class="demo-icon cif-nanvaii">&#xe8f6;</i> <span class="i-name">cif-nanvaii</span><span class="i-code">0xe8f6</span></div>
+        <div title="Code: 0xe8f7" class="the-icons span3"><i class="demo-icon cif-playground">&#xe8f7;</i> <span class="i-name">cif-playground</span><span class="i-code">0xe8f7</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe8f8" class="the-icons span3"><i class="demo-icon cif-omomi">&#xe8f8;</i> <span class="i-name">cif-omomi</span><span class="i-code">0xe8f8</span></div>
+        <div title="Code: 0xe8f9" class="the-icons span3"><i class="demo-icon cif-parking">&#xe8f9;</i> <span class="i-name">cif-parking</span><span class="i-code">0xe8f9</span></div>
+        <div title="Code: 0xe8fa" class="the-icons span3"><i class="demo-icon cif-post">&#xe8fa;</i> <span class="i-name">cif-post</span><span class="i-code">0xe8fa</span></div>
+        <div title="Code: 0xe8fb" class="the-icons span3"><i class="demo-icon cif-p-zanane">&#xe8fb;</i> <span class="i-name">cif-p-zanane</span><span class="i-code">0xe8fb</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe8fc" class="the-icons span3"><i class="demo-icon cif-rail-metro">&#xe8fc;</i> <span class="i-name">cif-rail-metro</span><span class="i-code">0xe8fc</span></div>
+        <div title="Code: 0xe8fd" class="the-icons span3"><i class="demo-icon cif-sarrafi">&#xe8fd;</i> <span class="i-name">cif-sarrafi</span><span class="i-code">0xe8fd</span></div>
+        <div title="Code: 0xe8fe" class="the-icons span3"><i class="demo-icon cif-rentcar">&#xe8fe;</i> <span class="i-name">cif-rentcar</span><span class="i-code">0xe8fe</span></div>
+        <div title="Code: 0xe8ff" class="the-icons span3"><i class="demo-icon cif-sabzi-foroshi">&#xe8ff;</i> <span class="i-name">cif-sabzi-foroshi</span><span class="i-code">0xe8ff</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe900" class="the-icons span3"><i class="demo-icon cif-sandewichi">&#xe900;</i> <span class="i-name">cif-sandewichi</span><span class="i-code">0xe900</span></div>
+        <div title="Code: 0xe901" class="the-icons span3"><i class="demo-icon cif-shahrbazi">&#xe901;</i> <span class="i-name">cif-shahrbazi</span><span class="i-code">0xe901</span></div>
+        <div title="Code: 0xe902" class="the-icons span3"><i class="demo-icon cif-shipping">&#xe902;</i> <span class="i-name">cif-shipping</span><span class="i-code">0xe902</span></div>
+        <div title="Code: 0xe903" class="the-icons span3"><i class="demo-icon cif-shop">&#xe903;</i> <span class="i-name">cif-shop</span><span class="i-code">0xe903</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe904" class="the-icons span3"><i class="demo-icon cif-sismoni">&#xe904;</i> <span class="i-name">cif-sismoni</span><span class="i-code">0xe904</span></div>
+        <div title="Code: 0xe905" class="the-icons span3"><i class="demo-icon cif-skiing">&#xe905;</i> <span class="i-name">cif-skiing</span><span class="i-code">0xe905</span></div>
+        <div title="Code: 0xe906" class="the-icons span3"><i class="demo-icon cif-sofrekhane">&#xe906;</i> <span class="i-name">cif-sofrekhane</span><span class="i-code">0xe906</span></div>
+        <div title="Code: 0xe907" class="the-icons span3"><i class="demo-icon cif-offer">&#xe907;</i> <span class="i-name">cif-offer</span><span class="i-code">0xe907</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe908" class="the-icons span3"><i class="demo-icon cif-phisioterapy">&#xe908;</i> <span class="i-name">cif-phisioterapy</span><span class="i-code">0xe908</span></div>
+        <div title="Code: 0xe909" class="the-icons span3"><i class="demo-icon cif-office">&#xe909;</i> <span class="i-name">cif-office</span><span class="i-code">0xe909</span></div>
+        <div title="Code: 0xe90a" class="the-icons span3"><i class="demo-icon cif-pizza">&#xe90a;</i> <span class="i-name">cif-pizza</span><span class="i-code">0xe90a</span></div>
+        <div title="Code: 0xe90b" class="the-icons span3"><i class="demo-icon cif-mosque">&#xe90b;</i> <span class="i-name">cif-mosque</span><span class="i-code">0xe90b</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe90c" class="the-icons span3"><i class="demo-icon cif-museum">&#xe90c;</i> <span class="i-name">cif-museum</span><span class="i-code">0xe90c</span></div>
+        <div title="Code: 0xe90d" class="the-icons span3"><i class="demo-icon cif-park-abi">&#xe90d;</i> <span class="i-name">cif-park-abi</span><span class="i-code">0xe90d</span></div>
+        <div title="Code: 0xe90e" class="the-icons span3"><i class="demo-icon cif-peak-motori">&#xe90e;</i> <span class="i-name">cif-peak-motori</span><span class="i-code">0xe90e</span></div>
+        <div title="Code: 0xe90f" class="the-icons span3"><i class="demo-icon cif-pharmacy">&#xe90f;</i> <span class="i-name">cif-pharmacy</span><span class="i-code">0xe90f</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe910" class="the-icons span3"><i class="demo-icon cif-p-bache">&#xe910;</i> <span class="i-name">cif-p-bache</span><span class="i-code">0xe910</span></div>
+        <div title="Code: 0xe911" class="the-icons span3"><i class="demo-icon cif-stadium">&#xe911;</i> <span class="i-name">cif-stadium</span><span class="i-code">0xe911</span></div>
+        <div title="Code: 0xe912" class="the-icons span3"><i class="demo-icon cif-soti-tasviri">&#xe912;</i> <span class="i-name">cif-soti-tasviri</span><span class="i-code">0xe912</span></div>
+        <div title="Code: 0xe913" class="the-icons span3"><i class="demo-icon cif-supermarket">&#xe913;</i> <span class="i-name">cif-supermarket</span><span class="i-code">0xe913</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe914" class="the-icons span3"><i class="demo-icon cif-tamirgah">&#xe914;</i> <span class="i-name">cif-tamirgah</span><span class="i-code">0xe914</span></div>
+        <div title="Code: 0xe915" class="the-icons span3"><i class="demo-icon cif-talar-paziraii">&#xe915;</i> <span class="i-name">cif-talar-paziraii</span><span class="i-code">0xe915</span></div>
+        <div title="Code: 0xe916" class="the-icons span3"><i class="demo-icon cif-tamirkar">&#xe916;</i> <span class="i-name">cif-tamirkar</span><span class="i-code">0xe916</span></div>
+        <div title="Code: 0xe917" class="the-icons span3"><i class="demo-icon cif-tavaoni-masraf">&#xe917;</i> <span class="i-name">cif-tavaoni-masraf</span><span class="i-code">0xe917</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe918" class="the-icons span3"><i class="demo-icon cif-taxi">&#xe918;</i> <span class="i-name">cif-taxi</span><span class="i-code">0xe918</span></div>
+        <div title="Code: 0xe919" class="the-icons span3"><i class="demo-icon cif-telecabin">&#xe919;</i> <span class="i-name">cif-telecabin</span><span class="i-code">0xe919</span></div>
+        <div title="Code: 0xe91a" class="the-icons span3"><i class="demo-icon cif-taviz-roghan">&#xe91a;</i> <span class="i-name">cif-taviz-roghan</span><span class="i-code">0xe91a</span></div>
+        <div title="Code: 0xe91b" class="the-icons span3"><i class="demo-icon cif-p-jorab">&#xe91b;</i> <span class="i-name">cif-p-jorab</span><span class="i-code">0xe91b</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe91c" class="the-icons span3"><i class="demo-icon cif-p-khayat">&#xe91c;</i> <span class="i-name">cif-p-khayat</span><span class="i-code">0xe91c</span></div>
+        <div title="Code: 0xe91d" class="the-icons span3"><i class="demo-icon cif-taxi-telephoni">&#xe91d;</i> <span class="i-name">cif-taxi-telephoni</span><span class="i-code">0xe91d</span></div>
+        <div title="Code: 0xe91e" class="the-icons span3"><i class="demo-icon cif-police">&#xe91e;</i> <span class="i-name">cif-police</span><span class="i-code">0xe91e</span></div>
+        <div title="Code: 0xe91f" class="the-icons span3"><i class="demo-icon cif-podium">&#xe91f;</i> <span class="i-name">cif-podium</span><span class="i-code">0xe91f</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe920" class="the-icons span3"><i class="demo-icon cif-tahiye-ghaza">&#xe920;</i> <span class="i-name">cif-tahiye-ghaza</span><span class="i-code">0xe920</span></div>
+        <div title="Code: 0xe921" class="the-icons span3"><i class="demo-icon cif-radiology">&#xe921;</i> <span class="i-name">cif-radiology</span><span class="i-code">0xe921</span></div>
+        <div title="Code: 0xe922" class="the-icons span3"><i class="demo-icon cif-resturant">&#xe922;</i> <span class="i-name">cif-resturant</span><span class="i-code">0xe922</span></div>
+        <div title="Code: 0xe923" class="the-icons span3"><i class="demo-icon cif-store">&#xe923;</i> <span class="i-name">cif-store</span><span class="i-code">0xe923</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe924" class="the-icons span3"><i class="demo-icon cif-restaurant">&#xe924;</i> <span class="i-name">cif-restaurant</span><span class="i-code">0xe924</span></div>
+        <div title="Code: 0xe925" class="the-icons span3"><i class="demo-icon cif-swimming">&#xe925;</i> <span class="i-name">cif-swimming</span><span class="i-code">0xe925</span></div>
+        <div title="Code: 0xe926" class="the-icons span3"><i class="demo-icon cif-rooznameforoshi">&#xe926;</i> <span class="i-name">cif-rooznameforoshi</span><span class="i-code">0xe926</span></div>
+        <div title="Code: 0xe927" class="the-icons span3"><i class="demo-icon cif-talaforoshi">&#xe927;</i> <span class="i-name">cif-talaforoshi</span><span class="i-code">0xe927</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe928" class="the-icons span3"><i class="demo-icon cif-saat-foroshi">&#xe928;</i> <span class="i-name">cif-saat-foroshi</span><span class="i-code">0xe928</span></div>
+        <div title="Code: 0xe929" class="the-icons span3"><i class="demo-icon cif-seke-foroshi">&#xe929;</i> <span class="i-name">cif-seke-foroshi</span><span class="i-code">0xe929</span></div>
+        <div title="Code: 0xe92a" class="the-icons span3"><i class="demo-icon cif-sim-card">&#xe92a;</i> <span class="i-name">cif-sim-card</span><span class="i-code">0xe92a</span></div>
+        <div title="Code: 0xe92b" class="the-icons span3"><i class="demo-icon cif-sosis-kalbas">&#xe92b;</i> <span class="i-name">cif-sosis-kalbas</span><span class="i-code">0xe92b</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe92c" class="the-icons span3"><i class="demo-icon cif-yadakkesh">&#xe92c;</i> <span class="i-name">cif-yadakkesh</span><span class="i-code">0xe92c</span></div>
+        <div title="Code: 0xe92d" class="the-icons span3"><i class="demo-icon cif-torshi-zeyton">&#xe92d;</i> <span class="i-name">cif-torshi-zeyton</span><span class="i-code">0xe92d</span></div>
+        <div title="Code: 0xe92e" class="the-icons span3"><i class="demo-icon cif-town">&#xe92e;</i> <span class="i-name">cif-town</span><span class="i-code">0xe92e</span></div>
+        <div title="Code: 0xe92f" class="the-icons span3"><i class="demo-icon cif-tv-policabli">&#xe92f;</i> <span class="i-name">cif-tv-policabli</span><span class="i-code">0xe92f</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe930" class="the-icons span3"><i class="demo-icon cif-uni-elmi-karbordi">&#xe930;</i> <span class="i-name">cif-uni-elmi-karbordi</span><span class="i-code">0xe930</span></div>
+        <div title="Code: 0xe931" class="the-icons span3"><i class="demo-icon cif-village">&#xe931;</i> <span class="i-name">cif-village</span><span class="i-code">0xe931</span></div>
+        <div title="Code: 0xe932" class="the-icons span3"><i class="demo-icon cif-zoo">&#xe932;</i> <span class="i-name">cif-zoo</span><span class="i-code">0xe932</span></div>
+        <div title="Code: 0xe933" class="the-icons span3"><i class="demo-icon cif-telescope">&#xe933;</i> <span class="i-name">cif-telescope</span><span class="i-code">0xe933</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe934" class="the-icons span3"><i class="demo-icon cif-tennis">&#xe934;</i> <span class="i-name">cif-tennis</span><span class="i-code">0xe934</span></div>
+        <div title="Code: 0xe935" class="the-icons span3"><i class="demo-icon cif-theatre">&#xe935;</i> <span class="i-name">cif-theatre</span><span class="i-code">0xe935</span></div>
+        <div title="Code: 0xe936" class="the-icons span3"><i class="demo-icon cif-toilets">&#xe936;</i> <span class="i-name">cif-toilets</span><span class="i-code">0xe936</span></div>
+        <div title="Code: 0xe937" class="the-icons span3"><i class="demo-icon cif-town-hall">&#xe937;</i> <span class="i-name">cif-town-hall</span><span class="i-code">0xe937</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe938" class="the-icons span3"><i class="demo-icon cif-train">&#xe938;</i> <span class="i-name">cif-train</span><span class="i-code">0xe938</span></div>
+        <div title="Code: 0xe939" class="the-icons span3"><i class="demo-icon cif-uni-azad">&#xe939;</i> <span class="i-name">cif-uni-azad</span><span class="i-code">0xe939</span></div>
+        <div title="Code: 0xe93a" class="the-icons span3"><i class="demo-icon cif-uni-payamnor">&#xe93a;</i> <span class="i-name">cif-uni-payamnor</span><span class="i-code">0xe93a</span></div>
+        <div title="Code: 0xe93b" class="the-icons span3"><i class="demo-icon cif-wc">&#xe93b;</i> <span class="i-name">cif-wc</span><span class="i-code">0xe93b</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe93c" class="the-icons span3"><i class="demo-icon cif-school">&#xe93c;</i> <span class="i-name">cif-school</span><span class="i-code">0xe93c</span></div>
+        <div title="Code: 0xe93d" class="the-icons span3"><i class="demo-icon cif-toys">&#xe93d;</i> <span class="i-name">cif-toys</span><span class="i-code">0xe93d</span></div>
+        <div title="Code: 0xe93e" class="the-icons span3"><i class="demo-icon cif-uni">&#xe93e;</i> <span class="i-name">cif-uni</span><span class="i-code">0xe93e</span></div>
+        <div title="Code: 0xe93f" class="the-icons span3"><i class="demo-icon cif-p-kif">&#xe93f;</i> <span class="i-name">cif-p-kif</span><span class="i-code">0xe93f</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe940" class="the-icons span3"><i class="demo-icon cif-p-kif-kafsh">&#xe940;</i> <span class="i-name">cif-p-kif-kafsh</span><span class="i-code">0xe940</span></div>
+        <div title="Code: 0xe941" class="the-icons span3"><i class="demo-icon cif-tolid-pakhsh">&#xe941;</i> <span class="i-name">cif-tolid-pakhsh</span><span class="i-code">0xe941</span></div>
+        <div title="Code: 0xe942" class="the-icons span3"><i class="demo-icon cif-tree">&#xe942;</i> <span class="i-name">cif-tree</span><span class="i-code">0xe942</span></div>
+        <div title="Code: 0xe943" class="the-icons span3"><i class="demo-icon cif-yakh-forosh">&#xe943;</i> <span class="i-name">cif-yakh-forosh</span><span class="i-code">0xe943</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe944" class="the-icons span3"><i class="demo-icon cif-zeton-torshi">&#xe944;</i> <span class="i-name">cif-zeton-torshi</span><span class="i-code">0xe944</span></div>
+        <div title="Code: 0xe945" class="the-icons span3"><i class="demo-icon cif-shop-1">&#xe945;</i> <span class="i-name">cif-shop-1</span><span class="i-code">0xe945</span></div>
+        <div title="Code: 0xe946" class="the-icons span3"><i class="demo-icon cif-factory2">&#xe946;</i> <span class="i-name">cif-factory2</span><span class="i-code">0xe946</span></div>
+        <div title="Code: 0xe947" class="the-icons span3"><i class="demo-icon cif-factory">&#xe947;</i> <span class="i-name">cif-factory</span><span class="i-code">0xe947</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe948" class="the-icons span3"><i class="demo-icon cif-drawing">&#xe948;</i> <span class="i-name">cif-drawing</span><span class="i-code">0xe948</span></div>
+        <div title="Code: 0xe949" class="the-icons span3"><i class="demo-icon cif-clinic2">&#xe949;</i> <span class="i-name">cif-clinic2</span><span class="i-code">0xe949</span></div>
+        <div title="Code: 0xe94a" class="the-icons span3"><i class="demo-icon cif-build4">&#xe94a;</i> <span class="i-name">cif-build4</span><span class="i-code">0xe94a</span></div>
+        <div title="Code: 0xe94b" class="the-icons span3"><i class="demo-icon cif-build3">&#xe94b;</i> <span class="i-name">cif-build3</span><span class="i-code">0xe94b</span></div>
+      </div>
+      <div class="row">
+        <div title="Code: 0xe94c" class="the-icons span3"><i class="demo-icon cif-build2">&#xe94c;</i> <span class="i-name">cif-build2</span><span class="i-code">0xe94c</span></div>
+        <div title="Code: 0xe94d" class="the-icons span3"><i class="demo-icon cif-build1">&#xe94d;</i> <span class="i-name">cif-build1</span><span class="i-code">0xe94d</span></div>
+        <div title="Code: 0xe94e" class="the-icons span3"><i class="demo-icon cif-select">&#xe94e;</i> <span class="i-name">cif-select</span><span class="i-code">0xe94e</span></div>
+      </div>
+    </div>
+    <div class="container footer">Generated by <a href="http://fontello.com">fontello.com</a></div>
+  </body>
+</html>
