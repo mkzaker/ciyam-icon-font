@@ -1,0 +1,577 @@
+@font-face {
+  font-family: 'ciyamiconfont';
+  src: url('../font/ciyamiconfont.eot?41808728');
+  src: url('../font/ciyamiconfont.eot?41808728#iefix') format('embedded-opentype'),
+       url('../font/ciyamiconfont.woff?41808728') format('woff'),
+       url('../font/ciyamiconfont.ttf?41808728') format('truetype'),
+       url('../font/ciyamiconfont.svg?41808728#ciyamiconfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'ciyamiconfont';
+    src: url('../font/ciyamiconfont.svg?41808728#ciyamiconfont') format('svg');
+  }
+}
+*/
+ 
+ [class^="cif-"]:before, [class*=" cif-"]:before {
+  font-family: "ciyamiconfont";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.cif-abzar-foroshi:before { content: '\e800'; } /* '' */
+.cif-a-amaken-varzeshi:before { content: '\e801'; } /* '' */
+.cif-a-asb:before { content: '\e802'; } /* '' */
+.cif-a-razmi:before { content: '\e803'; } /* '' */
+.cif-a-basketball:before { content: '\e804'; } /* '' */
+.cif-a-biliard:before { content: '\e805'; } /* '' */
+.cif-ard-foroshi:before { content: '\e806'; } /* '' */
+.cif-a-bowling:before { content: '\e807'; } /* '' */
+.cif-a-badansazi:before { content: '\e808'; } /* '' */
+.cif-atash-neshani:before { content: '\e809'; } /* '' */
+.cif-a-carting:before { content: '\e80a'; } /* '' */
+.cif-arayesh-zanane:before { content: '\e80b'; } /* '' */
+.cif-acvarium:before { content: '\e80c'; } /* '' */
+.cif-arayesh-mardaneh:before { content: '\e80d'; } /* '' */
+.cif-ash:before { content: '\e80e'; } /* '' */
+.cif-a-football:before { content: '\e80f'; } /* '' */
+.cif-a-golf:before { content: '\e810'; } /* '' */
+.cif-a-pist:before { content: '\e811'; } /* '' */
+.cif-airport:before { content: '\e812'; } /* '' */
+.cif-asal:before { content: '\e813'; } /* '' */
+.cif-bank-ayandeh:before { content: '\e814'; } /* '' */
+.cif-ajans-mosaferbari:before { content: '\e815'; } /* '' */
+.cif-a-pingpong:before { content: '\e816'; } /* '' */
+.cif-bank-eghtesadenovin:before { content: '\e817'; } /* '' */
+.cif-a-paintball:before { content: '\e818'; } /* '' */
+.cif-a-lavazem-shekar:before { content: '\e819'; } /* '' */
+.cif-a-tennis:before { content: '\e81a'; } /* '' */
+.cif-a-lavazem-varzeshi:before { content: '\e81b'; } /* '' */
+.cif-ambulance:before { content: '\e81c'; } /* '' */
+.cif-atr-odkolon:before { content: '\e81d'; } /* '' */
+.cif-amozesh:before { content: '\e81e'; } /* '' */
+.cif-bank:before { content: '\e81f'; } /* '' */
+.cif-bank-ansar:before { content: '\e820'; } /* '' */
+.cif-amozeshgah:before { content: '\e821'; } /* '' */
+.cif-amozesh-ranandegi:before { content: '\e822'; } /* '' */
+.cif-bank-day:before { content: '\e823'; } /* '' */
+.cif-animal:before { content: '\e824'; } /* '' */
+.cif-antique-ghadimi:before { content: '\e825'; } /* '' */
+.cif-bank-gavamin:before { content: '\e826'; } /* '' */
+.cif-a-vallyball:before { content: '\e827'; } /* '' */
+.cif-atari:before { content: '\e828'; } /* '' */
+.cif-bank-hekmat-iranian:before { content: '\e829'; } /* '' */
+.cif-atm:before { content: '\e82a'; } /* '' */
+.cif-bank-shahr:before { content: '\e82b'; } /* '' */
+.cif-bank-sina:before { content: '\e82c'; } /* '' */
+.cif-bank-kar-afarin:before { content: '\e82d'; } /* '' */
+.cif-asare-tarikhi:before { content: '\e82e'; } /* '' */
+.cif-bank-keshavarzi:before { content: '\e82f'; } /* '' */
+.cif-bank-khavarmiane:before { content: '\e830'; } /* '' */
+.cif-bank-refah:before { content: '\e831'; } /* '' */
+.cif-bank-resalat:before { content: '\e832'; } /* '' */
+.cif-bank-saderat:before { content: '\e833'; } /* '' */
+.cif-bank-post-bank:before { content: '\e834'; } /* '' */
+.cif-art-gallery:before { content: '\e835'; } /* '' */
+.cif-bank-parsian:before { content: '\e836'; } /* '' */
+.cif-bank-gardeshgari:before { content: '\e837'; } /* '' */
+.cif-bank-iran-zamin:before { content: '\e838'; } /* '' */
+.cif-book:before { content: '\e839'; } /* '' */
+.cif-bank-maskan:before { content: '\e83a'; } /* '' */
+.cif-bike:before { content: '\e83b'; } /* '' */
+.cif-bus-stop:before { content: '\e83c'; } /* '' */
+.cif-bus:before { content: '\e83d'; } /* '' */
+.cif-cake:before { content: '\e83e'; } /* '' */
+.cif-bank-tose-tavon:before { content: '\e83f'; } /* '' */
+.cif-bank-mehr:before { content: '\e840'; } /* '' */
+.cif-bank-mehreghtesad:before { content: '\e841'; } /* '' */
+.cif-bank-meli:before { content: '\e842'; } /* '' */
+.cif-bank-pasargad:before { content: '\e843'; } /* '' */
+.cif-bank-mellat:before { content: '\e844'; } /* '' */
+.cif-bank-samen:before { content: '\e845'; } /* '' */
+.cif-bank-saman:before { content: '\e846'; } /* '' */
+.cif-bank-sanat:before { content: '\e847'; } /* '' */
+.cif-bank-sarmaye:before { content: '\e848'; } /* '' */
+.cif-bank-sepah:before { content: '\e849'; } /* '' */
+.cif-barname-nevisi:before { content: '\e84a'; } /* '' */
+.cif-barbell:before { content: '\e84b'; } /* '' */
+.cif-bank-tejarat:before { content: '\e84c'; } /* '' */
+.cif-bargozari-majales:before { content: '\e84d'; } /* '' */
+.cif-behdashti-arayeshi:before { content: '\e84e'; } /* '' */
+.cif-basecamp:before { content: '\e84f'; } /* '' */
+.cif-bicycle:before { content: '\e850'; } /* '' */
+.cif-daftar-khane:before { content: '\e851'; } /* '' */
+.cif-bazyabi-etelat:before { content: '\e852'; } /* '' */
+.cif-bicycle-stop:before { content: '\e853'; } /* '' */
+.cif-bowling:before { content: '\e854'; } /* '' */
+.cif-bus-beinshahri:before { content: '\e855'; } /* '' */
+.cif-cafi-net:before { content: '\e856'; } /* '' */
+.cif-carvash:before { content: '\e857'; } /* '' */
+.cif-car-wash:before { content: '\e858'; } /* '' */
+.cif-cemetery:before { content: '\e859'; } /* '' */
+.cif-chai-ghahve:before { content: '\e85a'; } /* '' */
+.cif-chruch:before { content: '\e85b'; } /* '' */
+.cif-circuit-board:before { content: '\e85c'; } /* '' */
+.cif-clinic:before { content: '\e85d'; } /* '' */
+.cif-coffee:before { content: '\e85e'; } /* '' */
+.cif-clothing-store:before { content: '\e85f'; } /* '' */
+.cif-chini-bolor:before { content: '\e860'; } /* '' */
+.cif-cinema:before { content: '\e861'; } /* '' */
+.cif-cigarettes:before { content: '\e862'; } /* '' */
+.cif-ciyam:before { content: '\e863'; } /* '' */
+.cif-disability:before { content: '\e864'; } /* '' */
+.cif-convenience-store:before { content: '\e865'; } /* '' */
+.cif-fani-herfei:before { content: '\e866'; } /* '' */
+.cif-farm:before { content: '\e867'; } /* '' */
+.cif-flower:before { content: '\e868'; } /* '' */
+.cif-farsh-foroshi:before { content: '\e869'; } /* '' */
+.cif-cheshm-pezeshki:before { content: '\e86a'; } /* '' */
+.cif-doctor-m:before { content: '\e86b'; } /* '' */
+.cif-doctor-cheshm:before { content: '\e86c'; } /* '' */
+.cif-florist:before { content: '\e86d'; } /* '' */
+.cif-fuel:before { content: '\e86e'; } /* '' */
+.cif-gas:before { content: '\e86f'; } /* '' */
+.cif-ghahvekhane:before { content: '\e870'; } /* '' */
+.cif-dentist:before { content: '\e871'; } /* '' */
+.cif-dollar:before { content: '\e872'; } /* '' */
+.cif-drag-store:before { content: '\e873'; } /* '' */
+.cif-edare:before { content: '\e874'; } /* '' */
+.cif-ghanadi:before { content: '\e875'; } /* '' */
+.cif-folder:before { content: '\e876'; } /* '' */
+.cif-food:before { content: '\e877'; } /* '' */
+.cif-ghand-shekar:before { content: '\e878'; } /* '' */
+.cif-glasses:before { content: '\e879'; } /* '' */
+.cif-gosht-foroshi:before { content: '\e87a'; } /* '' */
+.cif-gh-mehre-iran:before { content: '\e87b'; } /* '' */
+.cif-graduate:before { content: '\e87c'; } /* '' */
+.cif-gov-abfa:before { content: '\e87d'; } /* '' */
+.cif-fastfood-1:before { content: '\e87e'; } /* '' */
+.cif-car:before { content: '\e87f'; } /* '' */
+.cif-desktop-mac:before { content: '\e880'; } /* '' */
+.cif-doctor:before { content: '\e881'; } /* '' */
+.cif-computer-foroshi:before { content: '\e882'; } /* '' */
+.cif-dandan:before { content: '\e883'; } /* '' */
+.cif-daneshga:before { content: '\e884'; } /* '' */
+.cif-dast-saz:before { content: '\e885'; } /* '' */
+.cif-fast-food:before { content: '\e886'; } /* '' */
+.cif-fire:before { content: '\e887'; } /* '' */
+.cif-device-mobile:before { content: '\e888'; } /* '' */
+.cif-f-refah:before { content: '\e889'; } /* '' */
+.cif-f-shahrvand:before { content: '\e88a'; } /* '' */
+.cif-college:before { content: '\e88b'; } /* '' */
+.cif-child:before { content: '\e88c'; } /* '' */
+.cif-female:before { content: '\e88d'; } /* '' */
+.cif-f-etka:before { content: '\e88e'; } /* '' */
+.cif-ghasabi:before { content: '\e88f'; } /* '' */
+.cif-injection:before { content: '\e890'; } /* '' */
+.cif-game-net:before { content: '\e891'; } /* '' */
+.cif-ins-karafarin:before { content: '\e892'; } /* '' */
+.cif-hairdresser:before { content: '\e893'; } /* '' */
+.cif-ins-iran:before { content: '\e894'; } /* '' */
+.cif-hakaki:before { content: '\e895'; } /* '' */
+.cif-ice-cubes:before { content: '\e896'; } /* '' */
+.cif-hamrah-tajhizat:before { content: '\e897'; } /* '' */
+.cif-ins-pasargad:before { content: '\e898'; } /* '' */
+.cif-hospital:before { content: '\e899'; } /* '' */
+.cif-hyper-market:before { content: '\e89a'; } /* '' */
+.cif-ins-alborz:before { content: '\e89b'; } /* '' */
+.cif-ins-parsian:before { content: '\e89c'; } /* '' */
+.cif-ins-dana:before { content: '\e89d'; } /* '' */
+.cif-ins-arman:before { content: '\e89e'; } /* '' */
+.cif-jegar:before { content: '\e89f'; } /* '' */
+.cif-ins-tamin-ejtemai-kargozari:before { content: '\e8a0'; } /* '' */
+.cif-kababi:before { content: '\e8a1'; } /* '' */
+.cif-kabab-torki:before { content: '\e8a2'; } /* '' */
+.cif-justice:before { content: '\e8a3'; } /* '' */
+.cif-kharazi:before { content: '\e8a4'; } /* '' */
+.cif-ins-ma:before { content: '\e8a5'; } /* '' */
+.cif-hotel:before { content: '\e8a6'; } /* '' */
+.cif-k-mardane:before { content: '\e8a7'; } /* '' */
+.cif-ins-day:before { content: '\e8a8'; } /* '' */
+.cif-icecream:before { content: '\e8a9'; } /* '' */
+.cif-ins-hafez:before { content: '\e8aa'; } /* '' */
+.cif-ins-mihan:before { content: '\e8ab'; } /* '' */
+.cif-ins-tamin-ejtemaii:before { content: '\e8ac'; } /* '' */
+.cif-ins-razi:before { content: '\e8ad'; } /* '' */
+.cif-kelid-sazi:before { content: '\e8ae'; } /* '' */
+.cif-internet:before { content: '\e8af'; } /* '' */
+.cif-jazebe-toristi:before { content: '\e8b0'; } /* '' */
+.cif-kale-pacheh:before { content: '\e8b1'; } /* '' */
+.cif-kentaki:before { content: '\e8b2'; } /* '' */
+.cif-khadamat-shabake:before { content: '\e8b3'; } /* '' */
+.cif-k-zanane:before { content: '\e8b4'; } /* '' */
+.cif-konsol-gari:before { content: '\e8b5'; } /* '' */
+.cif-mahd-kodak:before { content: '\e8b6'; } /* '' */
+.cif-ins-asia:before { content: '\e8b7'; } /* '' */
+.cif-ins-kosar:before { content: '\e8b8'; } /* '' */
+.cif-ins-markazi:before { content: '\e8b9'; } /* '' */
+.cif-ins-moalem:before { content: '\e8ba'; } /* '' */
+.cif-khoshkbar:before { content: '\e8bb'; } /* '' */
+.cif-ins-novin:before { content: '\e8bc'; } /* '' */
+.cif-markaz-moayne-fani:before { content: '\e8bd'; } /* '' */
+.cif-keraye-mashin:before { content: '\e8be'; } /* '' */
+.cif-ins-saman:before { content: '\e8bf'; } /* '' */
+.cif-komod:before { content: '\e8c0'; } /* '' */
+.cif-island:before { content: '\e8c1'; } /* '' */
+.cif-koze-sofal:before { content: '\e8c2'; } /* '' */
+.cif-ketab_foroshi:before { content: '\e8c3'; } /* '' */
+.cif-khoshk-shoii:before { content: '\e8c4'; } /* '' */
+.cif-lavazem-ashpazkhane:before { content: '\e8c5'; } /* '' */
+.cif-lab:before { content: '\e8c6'; } /* '' */
+.cif-lavazem-kadoii:before { content: '\e8c7'; } /* '' */
+.cif-mm-mali:before { content: '\e8c8'; } /* '' */
+.cif-lavazem-yadaki:before { content: '\e8c9'; } /* '' */
+.cif-lebas-aros:before { content: '\e8ca'; } /* '' */
+.cif-markaz-behdasht:before { content: '\e8cb'; } /* '' */
+.cif-male:before { content: '\e8cc'; } /* '' */
+.cif-microscope:before { content: '\e8cd'; } /* '' */
+.cif-mazhabi:before { content: '\e8ce'; } /* '' */
+.cif-labaniat:before { content: '\e8cf'; } /* '' */
+.cif-lavazem-arayesh:before { content: '\e8d0'; } /* '' */
+.cif-moshaver-amlak:before { content: '\e8d1'; } /* '' */
+.cif-lole-bazkoni:before { content: '\e8d2'; } /* '' */
+.cif-madrese:before { content: '\e8d3'; } /* '' */
+.cif-mosque1:before { content: '\e8d4'; } /* '' */
+.cif-mall:before { content: '\e8d5'; } /* '' */
+.cif-namayesh-mashin:before { content: '\e8d6'; } /* '' */
+.cif-mahi-foroshi:before { content: '\e8d7'; } /* '' */
+.cif-mavad-ghazaii:before { content: '\e8d8'; } /* '' */
+.cif-mm-afzaltoos:before { content: '\e8d9'; } /* '' */
+.cif-mm-arman:before { content: '\e8da'; } /* '' */
+.cif-library:before { content: '\e8db'; } /* '' */
+.cif-mehman-pazir:before { content: '\e8dc'; } /* '' */
+.cif-medicine:before { content: '\e8dd'; } /* '' */
+.cif-mezon:before { content: '\e8de'; } /* '' */
+.cif-mm-mizan:before { content: '\e8df'; } /* '' */
+.cif-parking-disabled:before { content: '\e8e0'; } /* '' */
+.cif-mm-noor:before { content: '\e8e1'; } /* '' */
+.cif-mm-samen:before { content: '\e8e2'; } /* '' */
+.cif-minibus-stop:before { content: '\e8e3'; } /* '' */
+.cif-mive-foroshi:before { content: '\e8e4'; } /* '' */
+.cif-mm-kosar:before { content: '\e8e5'; } /* '' */
+.cif-mm-askarie:before { content: '\e8e6'; } /* '' */
+.cif-mm-samen-alhojaj:before { content: '\e8e7'; } /* '' */
+.cif-morgh-foroshi:before { content: '\e8e8'; } /* '' */
+.cif-mojtama:before { content: '\e8e9'; } /* '' */
+.cif-mojtama-farhangi:before { content: '\e8ea'; } /* '' */
+.cif-markaz-moayene-fani:before { content: '\e8eb'; } /* '' */
+.cif-mokhaberat:before { content: '\e8ec'; } /* '' */
+.cif-p-mardane:before { content: '\e8ed'; } /* '' */
+.cif-music:before { content: '\e8ee'; } /* '' */
+.cif-policeman:before { content: '\e8ef'; } /* '' */
+.cif-polis10:before { content: '\e8f0'; } /* '' */
+.cif-ordogah:before { content: '\e8f1'; } /* '' */
+.cif-phone-tajhizat:before { content: '\e8f2'; } /* '' */
+.cif-park:before { content: '\e8f3'; } /* '' */
+.cif-pishkhan-dolat:before { content: '\e8f4'; } /* '' */
+.cif-power:before { content: '\e8f5'; } /* '' */
+.cif-nanvaii:before { content: '\e8f6'; } /* '' */
+.cif-playground:before { content: '\e8f7'; } /* '' */
+.cif-omomi:before { content: '\e8f8'; } /* '' */
+.cif-parking:before { content: '\e8f9'; } /* '' */
+.cif-post:before { content: '\e8fa'; } /* '' */
+.cif-p-zanane:before { content: '\e8fb'; } /* '' */
+.cif-rail-metro:before { content: '\e8fc'; } /* '' */
+.cif-sarrafi:before { content: '\e8fd'; } /* '' */
+.cif-rentcar:before { content: '\e8fe'; } /* '' */
+.cif-sabzi-foroshi:before { content: '\e8ff'; } /* '' */
+.cif-sandewichi:before { content: '\e900'; } /* '' */
+.cif-shahrbazi:before { content: '\e901'; } /* '' */
+.cif-shipping:before { content: '\e902'; } /* '' */
+.cif-shop:before { content: '\e903'; } /* '' */
+.cif-sismoni:before { content: '\e904'; } /* '' */
+.cif-skiing:before { content: '\e905'; } /* '' */
+.cif-sofrekhane:before { content: '\e906'; } /* '' */
+.cif-offer:before { content: '\e907'; } /* '' */
+.cif-phisioterapy:before { content: '\e908'; } /* '' */
+.cif-office:before { content: '\e909'; } /* '' */
+.cif-pizza:before { content: '\e90a'; } /* '' */
+.cif-mosque:before { content: '\e90b'; } /* '' */
+.cif-museum:before { content: '\e90c'; } /* '' */
+.cif-park-abi:before { content: '\e90d'; } /* '' */
+.cif-peak-motori:before { content: '\e90e'; } /* '' */
+.cif-pharmacy:before { content: '\e90f'; } /* '' */
+.cif-p-bache:before { content: '\e910'; } /* '' */
+.cif-stadium:before { content: '\e911'; } /* '' */
+.cif-soti-tasviri:before { content: '\e912'; } /* '' */
+.cif-supermarket:before { content: '\e913'; } /* '' */
+.cif-tamirgah:before { content: '\e914'; } /* '' */
+.cif-talar-paziraii:before { content: '\e915'; } /* '' */
+.cif-tamirkar:before { content: '\e916'; } /* '' */
+.cif-tavaoni-masraf:before { content: '\e917'; } /* '' */
+.cif-taxi:before { content: '\e918'; } /* '' */
+.cif-telecabin:before { content: '\e919'; } /* '' */
+.cif-taviz-roghan:before { content: '\e91a'; } /* '' */
+.cif-p-jorab:before { content: '\e91b'; } /* '' */
+.cif-p-khayat:before { content: '\e91c'; } /* '' */
+.cif-taxi-telephoni:before { content: '\e91d'; } /* '' */
+.cif-police:before { content: '\e91e'; } /* '' */
+.cif-podium:before { content: '\e91f'; } /* '' */
+.cif-tahiye-ghaza:before { content: '\e920'; } /* '' */
+.cif-radiology:before { content: '\e921'; } /* '' */
+.cif-resturant:before { content: '\e922'; } /* '' */
+.cif-store:before { content: '\e923'; } /* '' */
+.cif-restaurant:before { content: '\e924'; } /* '' */
+.cif-swimming:before { content: '\e925'; } /* '' */
+.cif-rooznameforoshi:before { content: '\e926'; } /* '' */
+.cif-talaforoshi:before { content: '\e927'; } /* '' */
+.cif-saat-foroshi:before { content: '\e928'; } /* '' */
+.cif-seke-foroshi:before { content: '\e929'; } /* '' */
+.cif-sim-card:before { content: '\e92a'; } /* '' */
+.cif-sosis-kalbas:before { content: '\e92b'; } /* '' */
+.cif-yadakkesh:before { content: '\e92c'; } /* '' */
+.cif-torshi-zeyton:before { content: '\e92d'; } /* '' */
+.cif-town:before { content: '\e92e'; } /* '' */
+.cif-tv-policabli:before { content: '\e92f'; } /* '' */
+.cif-uni-elmi-karbordi:before { content: '\e930'; } /* '' */
+.cif-village:before { content: '\e931'; } /* '' */
+.cif-zoo:before { content: '\e932'; } /* '' */
+.cif-telescope:before { content: '\e933'; } /* '' */
+.cif-tennis:before { content: '\e934'; } /* '' */
+.cif-theatre:before { content: '\e935'; } /* '' */
+.cif-toilets:before { content: '\e936'; } /* '' */
+.cif-town-hall:before { content: '\e937'; } /* '' */
+.cif-train:before { content: '\e938'; } /* '' */
+.cif-uni-azad:before { content: '\e939'; } /* '' */
+.cif-uni-payamnor:before { content: '\e93a'; } /* '' */
+.cif-wc:before { content: '\e93b'; } /* '' */
+.cif-school:before { content: '\e93c'; } /* '' */
+.cif-toys:before { content: '\e93d'; } /* '' */
+.cif-uni:before { content: '\e93e'; } /* '' */
+.cif-p-kif:before { content: '\e93f'; } /* '' */
+.cif-p-kif-kafsh:before { content: '\e940'; } /* '' */
+.cif-tolid-pakhsh:before { content: '\e941'; } /* '' */
+.cif-tree:before { content: '\e942'; } /* '' */
+.cif-yakh-forosh:before { content: '\e943'; } /* '' */
+.cif-zeton-torshi:before { content: '\e944'; } /* '' */
+.cif-shop-1:before { content: '\e945'; } /* '' */
+.cif-factory2:before { content: '\e946'; } /* '' */
+.cif-factory:before { content: '\e947'; } /* '' */
+.cif-drawing:before { content: '\e948'; } /* '' */
+.cif-clinic2:before { content: '\e949'; } /* '' */
+.cif-build4:before { content: '\e94a'; } /* '' */
+.cif-build3:before { content: '\e94b'; } /* '' */
+.cif-build2:before { content: '\e94c'; } /* '' */
+.cif-build1:before { content: '\e94d'; } /* '' */
+.cif-select:before { content: '\e94e'; } /* '' */
+.cif-abdarkhane:before { content: '\e94f'; } /* '' */
+.cif-ab-darmani:before { content: '\e950'; } /* '' */
+.cif-abzar-forosh:before { content: '\e951'; } /* '' */
+.cif-ahzab-siasi:before { content: '\e952'; } /* '' */
+.cif-ajans-karyabi:before { content: '\e953'; } /* '' */
+.cif-ajor:before { content: '\e954'; } /* '' */
+.cif-ajor-2:before { content: '\e955'; } /* '' */
+.cif-akasi:before { content: '\e956'; } /* '' */
+.cif-akasi-film:before { content: '\e957'; } /* '' */
+.cif-akvarium:before { content: '\e958'; } /* '' */
+.cif-amozesh-ashpazi:before { content: '\e959'; } /* '' */
+.cif-amozeshgah-1:before { content: '\e95a'; } /* '' */
+.cif-amozesh-ghoran:before { content: '\e95b'; } /* '' */
+.cif-amozesh-rahdor:before { content: '\e95c'; } /* '' */
+.cif-anbar:before { content: '\e95d'; } /* '' */
+.cif-anbar1:before { content: '\e95e'; } /* '' */
+.cif-asansor:before { content: '\e95f'; } /* '' */
+.cif-asbab-bazi:before { content: '\e960'; } /* '' */
+.cif-avarezi:before { content: '\e961'; } /* '' */
+.cif-avarezi-2:before { content: '\e962'; } /* '' */
+.cif-badalijat:before { content: '\e963'; } /* '' */
+.cif-bagh-parande:before { content: '\e964'; } /* '' */
+.cif-bagh-vahsh:before { content: '\e965'; } /* '' */
+.cif-bandargah:before { content: '\e966'; } /* '' */
+.cif-barbari:before { content: '\e967'; } /* '' */
+.cif-bargh-mashin:before { content: '\e968'; } /* '' */
+.cif-bargh-power:before { content: '\e969'; } /* '' */
+.cif-bargh-sakhteman:before { content: '\e96a'; } /* '' */
+.cif-bargh-sanati:before { content: '\e96b'; } /* '' */
+.cif-baskol:before { content: '\e96c'; } /* '' */
+.cif-batri-sazi:before { content: '\e96d'; } /* '' */
+.cif-battery:before { content: '\e96e'; } /* '' */
+.cif-bazargani:before { content: '\e96f'; } /* '' */
+.cif-boloor:before { content: '\e970'; } /* '' */
+.cif-bolor:before { content: '\e971'; } /* '' */
+.cif-bookmark-plus:before { content: '\e972'; } /* '' */
+.cif-bookmark-yes:before { content: '\e973'; } /* '' */
+.cif-borj:before { content: '\e974'; } /* '' */
+.cif-bors:before { content: '\e975'; } /* '' */
+.cif-boton:before { content: '\e976'; } /* '' */
+.cif-chakme:before { content: '\e977'; } /* '' */
+.cif-chamedan-sak:before { content: '\e978'; } /* '' */
+.cif-chapkhane:before { content: '\e979'; } /* '' */
+.cif-charkh-khayati:before { content: '\e97a'; } /* '' */
+.cif-charm:before { content: '\e97b'; } /* '' */
+.cif-charm1:before { content: '\e97c'; } /* '' */
+.cif-cheragh-rahnamaii:before { content: '\e97d'; } /* '' */
+.cif-cheshme:before { content: '\e97e'; } /* '' */
+.cif-chob:before { content: '\e97f'; } /* '' */
+.cif-cigar:before { content: '\e980'; } /* '' */
+.cif-daftar-khadamat-ghazaii:before { content: '\e981'; } /* '' */
+.cif-dampaii:before { content: '\e982'; } /* '' */
+.cif-daryache:before { content: '\e983'; } /* '' */
+.cif-dorbin-jadei:before { content: '\e984'; } /* '' */
+.cif-dorbin-madarbaste:before { content: '\e985'; } /* '' */
+.cif-dozdgir:before { content: '\e986'; } /* '' */
+.cif-etelaat:before { content: '\e987'; } /* '' */
+.cif-eynak-foroshi:before { content: '\e988'; } /* '' */
+.cif-faravarde-nafti:before { content: '\e989'; } /* '' */
+.cif-foroshgah-zanjirei:before { content: '\e98a'; } /* '' */
+.cif-galery:before { content: '\e98b'; } /* '' */
+.cif-gavdari:before { content: '\e98c'; } /* '' */
+.cif-ghali-shoii:before { content: '\e98d'; } /* '' */
+.cif-ghavasi:before { content: '\e98e'; } /* '' */
+.cif-ghayegh-savari:before { content: '\e98f'; } /* '' */
+.cif-goni-kise:before { content: '\e990'; } /* '' */
+.cif-haki:before { content: '\e991'; } /* '' */
+.cif-hamam:before { content: '\e992'; } /* '' */
+.cif-haml-mashin:before { content: '\e993'; } /* '' */
+.cif-heyvan-khanegi:before { content: '\e994'; } /* '' */
+.cif-izogam:before { content: '\e995'; } /* '' */
+.cif-jabe-hadie:before { content: '\e996'; } /* '' */
+.cif-jaresaghil:before { content: '\e997'; } /* '' */
+.cif-jet-ski:before { content: '\e998'; } /* '' */
+.cif-kabinet:before { content: '\e999'; } /* '' */
+.cif-kafashi:before { content: '\e99a'; } /* '' */
+.cif-kalaye-khab:before { content: '\e99b'; } /* '' */
+.cif-kamva:before { content: '\e99c'; } /* '' */
+.cif-kargah:before { content: '\e99d'; } /* '' */
+.cif-kargar:before { content: '\e99e'; } /* '' */
+.cif-karte-arosi:before { content: '\e99f'; } /* '' */
+.cif-kashi:before { content: '\e9a0'; } /* '' */
+.cif-keshavarzi:before { content: '\e9a1'; } /* '' */
+.cif-ketab-foroshi-1:before { content: '\e9a2'; } /* '' */
+.cif-ketab-khane:before { content: '\e9a3'; } /* '' */
+.cif-khabargozari:before { content: '\e9a4'; } /* '' */
+.cif-khabgah:before { content: '\e9a5'; } /* '' */
+.cif-khabgah-2:before { content: '\e9a6'; } /* '' */
+.cif-khadamate-internet:before { content: '\e9a7'; } /* '' */
+.cif-khadamat-fazayesabz:before { content: '\e9a8'; } /* '' */
+.cif-khadamat-hesabdari:before { content: '\e9a9'; } /* '' */
+.cif-khadamat-majales:before { content: '\e9aa'; } /* '' */
+.cif-khadamat-mohajerat:before { content: '\e9ab'; } /* '' */
+.cif-khadamat-mohandesi:before { content: '\e9ac'; } /* '' */
+.cif-khadamat-moshavere:before { content: '\e9ad'; } /* '' */
+.cif-khadamat-nezafati:before { content: '\e9ae'; } /* '' */
+.cif-khdamat-rayane:before { content: '\e9af'; } /* '' */
+.cif-kheiriye:before { content: '\e9b0'; } /* '' */
+.cif-kooh:before { content: '\e9b1'; } /* '' */
+.cif-kooh2:before { content: '\e9b2'; } /* '' */
+.cif-kooh-navardi:before { content: '\e9b3'; } /* '' */
+.cif-koshtargah:before { content: '\e9b4'; } /* '' */
+.cif-langar-gah:before { content: '\e9b5'; } /* '' */
+.cif-lavazem-arayeshi1:before { content: '\e9b6'; } /* '' */
+.cif-lavazem-imeni:before { content: '\e9b7'; } /* '' */
+.cif-lavazem-khanegi:before { content: '\e9b8'; } /* '' */
+.cif-lavazem-koh:before { content: '\e9b9'; } /* '' */
+.cif-lavazem-komakamozeshi:before { content: '\e9ba'; } /* '' */
+.cif-lavazem-pezeshki:before { content: '\e9bb'; } /* '' */
+.cif-lentkobi:before { content: '\e9bc'; } /* '' */
+.cif-lole-keshi:before { content: '\e9bd'; } /* '' */
+.cif-loster:before { content: '\e9be'; } /* '' */
+.cif-madan:before { content: '\e9bf'; } /* '' */
+.cif-makan-khas:before { content: '\e9c0'; } /* '' */
+.cif-makan-khas1:before { content: '\e9c1'; } /* '' */
+.cif-mall-1:before { content: '\e9c2'; } /* '' */
+.cif-markaz-bazyaft:before { content: '\e9c3'; } /* '' */
+.cif-masaleh-sakhtemani:before { content: '\e9c4'; } /* '' */
+.cif-masazh:before { content: '\e9c5'; } /* '' */
+.cif-mashin-rahsazi:before { content: '\e9c6'; } /* '' */
+.cif-mashin-sakhtemani:before { content: '\e9c7'; } /* '' */
+.cif-mashin-sanati:before { content: '\e9c8'; } /* '' */
+.cif-mavad-shimiaii:before { content: '\e9c9'; } /* '' */
+.cif-microphone:before { content: '\e9ca'; } /* '' */
+.cif-mobl:before { content: '\e9cb'; } /* '' */
+.cif-mobl-edari:before { content: '\e9cc'; } /* '' */
+.cif-mohr:before { content: '\e9cd'; } /* '' */
+.cif-mohrr:before { content: '\e9ce'; } /* '' */
+.cif-morghdari:before { content: '\e9cf'; } /* '' */
+.cif-movj-savari:before { content: '\e9d0'; } /* '' */
+.cif-naghashi:before { content: '\e9d1'; } /* '' */
+.cif-najari:before { content: '\e9d2'; } /* '' */
+.cif-nakhlestan:before { content: '\e9d3'; } /* '' */
+.cif-negarkhane:before { content: '\e9d4'; } /* '' */
+.cif-nirogah:before { content: '\e9d5'; } /* '' */
+.cif-noghre:before { content: '\e9d6'; } /* '' */
+.cif-pakat-post:before { content: '\e9d7'; } /* '' */
+.cif-parastari:before { content: '\e9d8'; } /* '' */
+.cif-parde:before { content: '\e9d9'; } /* '' */
+.cif-park-hayatvahsh:before { content: '\e9da'; } /* '' */
+.cif-pelastic1:before { content: '\e9db'; } /* '' */
+.cif-pelastic2:before { content: '\e9dc'; } /* '' */
+.cif-pelazh:before { content: '\e9dd'; } /* '' */
+.cif-photokopi-2:before { content: '\e9de'; } /* '' */
+.cif-pich-mohre-2:before { content: '\e9df'; } /* '' */
+.cif-point:before { content: '\e9e0'; } /* '' */
+.cif-police-1:before { content: '\e9e1'; } /* '' */
+.cif-poshak-varzeshi:before { content: '\e9e2'; } /* '' */
+.cif-radiator:before { content: '\e9e3'; } /* '' */
+.cif-rah-pele:before { content: '\e9e4'; } /* '' */
+.cif-rozname-majale:before { content: '\e9e5'; } /* '' */
+.cif-sahafi:before { content: '\e9e6'; } /* '' */
+.cif-salon:before { content: '\e9e7'; } /* '' */
+.cif-salon-confrance:before { content: '\e9e8'; } /* '' */
+.cif-saloon:before { content: '\e9e9'; } /* '' */
+.cif-samak:before { content: '\e9ea'; } /* '' */
+.cif-sam-foroshi:before { content: '\e9eb'; } /* '' */
+.cif-sanaye-dasti:before { content: '\e9ec'; } /* '' */
+.cif-sandogh-post-2:before { content: '\e9ed'; } /* '' */
+.cif-sang-bori:before { content: '\e9ee'; } /* '' */
+.cif-satle-zobale:before { content: '\e9ef'; } /* '' */
+.cif-shenavaii-sanji:before { content: '\e9f0'; } /* '' */
+.cif-shomine:before { content: '\e9f1'; } /* '' */
+.cif-shoray-halekhtelaf:before { content: '\e9f2'; } /* '' */
+.cif-shotor:before { content: '\e9f3'; } /* '' */
+.cif-siman:before { content: '\e9f4'; } /* '' */
+.cif-sirk:before { content: '\e9f5'; } /* '' */
+.cif-taavoni:before { content: '\e9f6'; } /* '' */
+.cif-tablighat:before { content: '\e9f7'; } /* '' */
+.cif-tablo-rahnama:before { content: '\e9f8'; } /* '' */
+.cif-tajhizat-hamam:before { content: '\e9f9'; } /* '' */
+.cif-tajhizat-keshavarzi:before { content: '\e9fa'; } /* '' */
+.cif-tambr:before { content: '\e9fb'; } /* '' */
+.cif-tarbiat-moalem:before { content: '\e9fc'; } /* '' */
+.cif-tasisat:before { content: '\e9fd'; } /* '' */
+.cif-tavoni:before { content: '\e9fe'; } /* '' */
+.cif-tazinat-dakheli:before { content: '\e9ff'; } /* '' */
+.cif-telephon-mokhaberat:before { content: '\ea00'; } /* '' */
+.cif-telephon-omomi:before { content: '\ea01'; } /* '' */
+.cif-tipe-tarjome:before { content: '\ea02'; } /* '' */
+.cif-tir-ahan:before { content: '\ea03'; } /* '' */
+.cif-tokhmorg-foroshi:before { content: '\ea04'; } /* '' */
+.cif-tunnel:before { content: '\ea05'; } /* '' */
+.cif-vekalat:before { content: '\ea06'; } /* '' */
+.cif-video-colop:before { content: '\ea07'; } /* '' */
+.cif-zamin-bazi:before { content: '\ea08'; } /* '' */
